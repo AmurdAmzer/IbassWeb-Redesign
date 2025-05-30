@@ -97,7 +97,7 @@ export default function Home() {
               <Row>
                 {/* About Us Card */}
                 <Col md={12} className="mb-4">
-                  <Card className="h-100 border-0 shadow-sm">
+                  <Card className="h-100 border-0 shadow">
                     <Card.Body className="p-4">
                       <h2 className="text-center mb-3">About Us</h2>
                       <p className="mb-3">
@@ -116,7 +116,7 @@ export default function Home() {
                 
                 {/* Vision Card */}
                 <Col md={6} className="mb-4">
-                  <Card className="h-100 text-center border-0 shadow-sm">
+                  <Card className="h-100 text-center border-0 shadow">
                     <Card.Body className="p-4">
                       <h3 className="mb-3" style={{ color: 'var(--school-blue)' }}>Vision</h3>
                       <p className="text-muted">
@@ -128,7 +128,7 @@ export default function Home() {
                 
                 {/* Mission Card */}
                 <Col md={6} className="mb-4">
-                  <Card className="h-100 text-center border-0 shadow-sm">
+                  <Card className="h-100 text-center border-0 shadow">
                     <Card.Body className="p-4">
                       <h3 className="mb-3" style={{ color: 'var(--school-blue)' }}>Mission</h3>
                       <p className="text-muted">
@@ -153,7 +153,7 @@ export default function Home() {
           <Row>
             {departments.map((dept, index) => (
               <Col lg={3} md={6} className="mb-4" key={index}>
-                <Card className="h-100 text-center border-0 shadow-sm">
+                <Card className="h-100 text-center border-0 shadow">
                   <Card.Body className="p-4">
                     <div className="mb-3" style={{ fontSize: '3rem' }}>{dept.icon}</div>
                     <h5 className="mb-3">{dept.title}</h5>
@@ -219,16 +219,19 @@ export default function Home() {
           <Row>
             {leadership.map((leader, index) => (
               <Col lg={3} md={6} className="mb-4" key={index}>
-                <Card className="text-center border-0 shadow-sm h-100">
+                <Card className="text-center border-0 shadow h-100">
                   <Card.Body className="p-4">
                     <div 
                       className="rounded-circle mx-auto mb-3"
                       style={{
                         width: '120px',
                         height: '120px',
+                        padding: '8px',
                         backgroundColor: '#e9ecef',
                         backgroundImage: `url(${leader.image})`,
-                        backgroundSize: 'cover',
+                        backgroundSize: 'contain',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundColor: 'transparent',
                         backgroundPosition: 'center'
                       }}
                     />
