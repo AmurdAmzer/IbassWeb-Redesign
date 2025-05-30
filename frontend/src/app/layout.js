@@ -4,8 +4,11 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 export const metadata = {
-  title: 'Ibadur Rahman Academy - Excellence in Education',
+  title: 'Ibadur Rahman Academy',
   description: 'Welcome to Ibadur Rahman Academy, Ghana',
+  icons: {
+    icon: '/favicon.ico', // or .png/.svg
+  },
 }
 
 export default function RootLayout({ children }) {

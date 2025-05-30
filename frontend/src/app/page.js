@@ -82,7 +82,7 @@ export default function Home() {
       <Hero />
 
       {/* About Us Section */}
-      <section className="py-5">
+      <section className="py-5 bg-light">
         <Container>
           <Row className="align-items-center">
             <Col lg={5} className="mb-4 mb-lg-0 order-2 order-lg-1">
@@ -94,33 +94,48 @@ export default function Home() {
               />
             </Col>
             <Col lg={7} className='order-1 order-lg-2'>
-            <h2 className="text-center mb-2">About Us:</h2>
-              <p className="mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius 
-                enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros 
-                dolor interdum nulla, ut commodo diam libero vitae erat.
-              </p>
-              <p className="mb-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius 
-                enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros 
-                dolor interdum nulla, ut commodo diam libero vitae erat.
-              </p>
-              <Row className="text-center">
-                <Col md={6} className="mb-4">
-                  <div className="p-4">
-                    <h3 className="mb-2" style={{ color: 'var(--school-blue)' }}>Vision</h3>
-                    <p className="text-muted">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
-                    </p>
-                  </div>
+              <Row>
+                {/* About Us Card */}
+                <Col md={12} className="mb-4">
+                  <Card className="h-100 border-0 shadow-sm">
+                    <Card.Body className="p-4">
+                      <h2 className="text-center mb-3">About Us</h2>
+                      <p className="mb-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius 
+                        enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros 
+                        dolor interdum nulla, ut commodo diam libero vitae erat.
+                      </p>
+                      <p className="mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius 
+                        enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros 
+                        dolor interdum nulla, ut commodo diam libero vitae erat.
+                      </p>
+                    </Card.Body>
+                  </Card>
                 </Col>
+                
+                {/* Vision Card */}
                 <Col md={6} className="mb-4">
-                  <div className="p-4">
-                    <h3 className="mb-2" style={{ color: 'var(--school-blue)' }}>Mission</h3>
-                    <p className="text-muted">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
-                    </p>
-                  </div>
+                  <Card className="h-100 text-center border-0 shadow-sm">
+                    <Card.Body className="p-4">
+                      <h3 className="mb-3" style={{ color: 'var(--school-blue)' }}>Vision</h3>
+                      <p className="text-muted">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                      </p>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                
+                {/* Mission Card */}
+                <Col md={6} className="mb-4">
+                  <Card className="h-100 text-center border-0 shadow-sm">
+                    <Card.Body className="p-4">
+                      <h3 className="mb-3" style={{ color: 'var(--school-blue)' }}>Mission</h3>
+                      <p className="text-muted">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                      </p>
+                    </Card.Body>
+                  </Card>
                 </Col>
               </Row>
             </Col>
@@ -129,7 +144,7 @@ export default function Home() {
       </section>
 
       {/* Our Departments Section */}
-      <section className="py-5 bg-light">
+      <section className="py-5" style={{backgroundColor: '#e9ecef'}}>
         <Container>
           <h2 className="text-center mb-3">Our Departments</h2>
           <p className="text-center text-muted mb-5">
