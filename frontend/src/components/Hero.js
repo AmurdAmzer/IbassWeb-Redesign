@@ -29,7 +29,7 @@ export default function Hero() {
       style={{
         minHeight: '85vh',
         padding: '0 1rem',
-        background: 'linear-gradient(rgba(10, 25, 50, 0.75), rgba(0, 128, 128, 0.45)), url(/images/hero-bg.jpg) center/cover',
+        background: 'linear-gradient(rgba(10, 25, 50, 0.85), rgba(0, 64, 128, 0.45)), url(/images/hero-bg.jpg) center/cover',
         overflowX: 'hidden',
       }}
     >
