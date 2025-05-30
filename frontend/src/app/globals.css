@@ -101,6 +101,6 @@ section {
     white-space: nowrap;        /* prevent wrapping */
     overflow: hidden;
     text-overflow: ellipsis;   /* add ... if text overflows */
-    max-width: 70%;            /* restrict max width to leave space for hamburger */
+    max-width: 80%;            /* restrict max width to leave space for hamburger */
   }
 }
