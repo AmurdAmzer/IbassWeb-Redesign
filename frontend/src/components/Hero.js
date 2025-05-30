@@ -27,15 +27,23 @@ export default function Hero() {
     <section 
       className="hero-section text-white d-flex align-items-center position-relative"
       style={{
-        minHeight: '600px',
+        minHeight: '85vh',
         padding: '0 1rem',
-        background: 'linear-gradient(rgba(9, 10, 70, 0.9), rgba(9, 10, 70, 0.9)), url(/images/hero-bg.jpg) center/cover',
-        backgroundBlendMode: 'overlay',
-        backgroundColor: '#090A46',
+        background: 'linear-gradient(rgba(10, 25, 50, 0.75), rgba(0, 128, 128, 0.45)), url(/images/hero-bg.jpg) center/cover',
         overflowX: 'hidden',
       }}
     >
-      <Container>
+      {/* Subtle pattern overlay */}
+      <div 
+        className="position-absolute w-100 h-100"
+        style={{
+          background: 'radial-gradient(circle at 50% 50%, rgba(255,255,255,0.05) 0%, transparent 70%)',
+          top: 0,
+          left: 0,
+          zIndex: 1
+        }}
+      />
+      <Container className="position-relative" style={{ zIndex: 3 }}>
         <div className="text-center">
           <h3 className="display-4 mb-4 text-white" 
           style={{ fontSize: 'clamp(1.2rem, 4vw, 2rem)' }}>
