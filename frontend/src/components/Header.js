@@ -4,6 +4,8 @@
 import { Container, Navbar, Nav } from 'react-bootstrap'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import Image from 'next/image'
+import logo from '/public/images/logo.png' // static import
 
 export default function Header() {
   const pathname = usePathname()
@@ -22,8 +24,16 @@ export default function Header() {
   return (
     <Navbar bg="white" expand="lg" className="py-3 shadow-sm" sticky="top">
       <Container>
-        <Navbar.Brand as={Link} href="/" style={{ color: '#090A46', fontWeight: 'bold' }}>
-          IBADUR RAHMAN ACADEMY
+        <Navbar.Brand as={Link} href="/" className="d-flex align-items-center gap-2">
+          <Image
+            src={logo}
+            alt='IBADUR RAHMAN ACADEMY Logo'
+            width={40}
+            height={40}
+            style={{ objectFit: 'contain', borderRadius: '50%' }}
+            />
+            <span style={{ color: '#090A46', fontWeight: 'bold' }}>
+          IBADUR RAHMAN ACADEMY </span>
         </Navbar.Brand>
         
         <Navbar.Toggle />
