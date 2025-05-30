@@ -6,7 +6,7 @@ export default function Hero() {
     {
       title: "Welcome to",
       titleHighlight: "IBADUR RAHMAN ACADEMY",
-      description: "Welcome to Ibadur Rahman School, where we nurture curiosity and foster a love for learning. Join us in our mission to create a supportive environment that inspires students to achieve their full potential.",
+      description: "Integrity, Belief, Accountability, Discipline, Unity of purpose and Responsibility are our Core Values",
       image: "/images/hero-bg.jpg"
     },
     {
@@ -60,11 +60,7 @@ export default function Hero() {
           <p 
             className="lead mb-5 text-white" 
             style={{ fontSize: 'clamp(1rem, 3.5vw, 1.4rem)', lineHeight: '1.6' }}>
-              Welcome to Ibadur Rahman School, where we nurture curiosity and foster a love for learning.
-              <br />
-              Join us in our mission to create a supportive environment that inspires students to achieve their
-              <br />
-              full potential.
+              Integrity, Belief, Accountability, Discipline, Unity of purpose and Responsibility are our Core Values.
           </p>
           <button 
             className="btn btn-lg px-5 py-3"
@@ -76,7 +72,7 @@ export default function Hero() {
               fontSize: '1.2rem'
             }}
           >
-            Learn More
+            Reach Out
           </button>
         </div>
       </Container>

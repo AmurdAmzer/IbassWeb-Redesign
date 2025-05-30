@@ -9,22 +9,22 @@ export default function Home() {
     {
       icon: '🔬',
       title: 'General Science',
-      description: 'Discover how we provide quality education tailored to each student\'s unique needs and aspirations.'
+      description: 'Preparing future doctors, engineers, and scientists through comprehensive study of Biology, Chemistry, Physics, and Mathematics.'
     },
     {
       icon: '📚',
       title: 'General Arts',
-      description: 'Our classrooms foster creativity, collaboration, and critical thinking among students of all ages.'
+      description: 'Developing critical thinkers and communicators through Literature, History, Geography, Economics, and Languages.'
     },
     {
       icon: '🎨',
       title: 'Visual Arts',
-      description: 'We offer diverse programs designed to meet the varying interests and goals of our students.'
+      description: 'Nurturing creative talent through Graphic Design, Textiles, Ceramics, Picture Making, and Art.'
     },
     {
       icon: '🏠',
       title: 'Home Economics',
-      description: 'Our dedicated staff and resources ensure every student feels supported throughout their educational journey.'
+      description: 'Developing essential life skills through practical learning in nutrition, textiles, and home management.'
     }
   ]
 
@@ -53,25 +53,25 @@ export default function Home() {
     {
       name: 'Mr. Bashiru Shehu',
       position: 'Headmaster',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
+      description: 'With over 15 years in educational leadership, Mr. Shehu brings vision and innovation to guide our school towards academic excellence and holistic student development.',
       image: '/images/headmaster.jpg'
     },
     {
       name: 'Mr. Umar Ali',
       position: 'Assistant Headmaster',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
+      description: 'A dedicated educator with expertise in curriculum development and student affairs, ensuring our academic programs meet the highest standards of quality education.',
       image: '/images/assistant1.jpg'
     },
     {
       name: 'Mrs. Mariam Issah',
       position: 'Assistant Headmistress',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
+      description: 'Passionate about student welfare and academic support, Mrs. Issah oversees pastoral care and creates a nurturing environment for all students to thrive.',
       image: '/images/assistant2.jpg'
     },
     {
       name: 'Ustaaz',
       position: 'Imaam',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
+      description: 'Our spiritual guide who provides Islamic education and moral guidance, helping students develop strong character and values alongside their academic pursuits.',
       image: '/images/ustaaz.jpg'
     }
   ]
@@ -101,18 +101,17 @@ export default function Home() {
               <Row>
                 {/* About Us Card */}
                 <Col md={12} className="mb-4">
-                  <Card className="h-100 border-0 shadow">
+                  <Card className="h-100 text-center border-0 shadow">
                     <Card.Body className="p-4">
                       <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>About Us</h2>
-                      <p className="mb-3">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius 
-                        enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros 
-                        dolor interdum nulla, ut commodo diam libero vitae erat.
+                      <p className="mb-3 text-muted">
+                      Ibadur Rahman Academy is a private senior high school located at Buobai in the Asokore Mampong Municipality. The school was established by the Ibadur Rahman Association Inc., a Non-Governmental organisation made up of most / predominant Ghanaian Muslim residing and working in the United State of America (USA). 
                       </p>
-                      <p className="mb-0">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius 
-                        enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros 
-                        dolor interdum nulla, ut commodo diam libero vitae erat.
+                      <p className="mb-3 text-muted">
+                      The idea to establish the school was conceived in one of their meetings in 2005. Since then, they begun the mobilization of funds and resources which eventually led to the purchase of this land and the commencement of the school project.
+                      </p>
+                      <p className="mb-0 text-muted">
+                      Their main aim for establishing the school is to provide secondary education to the poor and needy students in Kumasi, Ashanti Region in particular and Ghana as a whole. 
                       </p>
                     </Card.Body>
                   </Card>
@@ -124,7 +123,7 @@ export default function Home() {
                     <Card.Body className="p-4">
                       <h3 className="mb-3" style={{ color: 'var(--school-blue)' }}>Vision</h3>
                       <p className="text-muted">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                      A thriving academy of choice, excelling beyond Ghana to be one of the outstanding academic institutions in the areas of sciences, arts and sports
                       </p>
                     </Card.Body>
                   </Card>
@@ -136,7 +135,7 @@ export default function Home() {
                     <Card.Body className="p-4">
                       <h3 className="mb-3" style={{ color: 'var(--school-blue)' }}>Mission</h3>
                       <p className="text-muted">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                        To motivate the development of a holistic sense of self by belonging to an academy which values excellence, creativity and responsible citizenry. 
                       </p>
                     </Card.Body>
                   </Card>
@@ -151,8 +150,8 @@ export default function Home() {
       <section className="py-5" style={{backgroundColor: '#e9ecef'}}>
         <Container>
           <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>Our Departments</h2>
-          <p className="text-center text-muted mb-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <p className="text-center text-muted mb-5 px-3">
+          Explore our diverse academic programs designed to nurture every student's potential and prepare them for successful futures.
           </p>
           <Row>
             {departments.map((dept, index) => (
@@ -168,7 +167,6 @@ export default function Home() {
             ))}
           </Row>
           <div className="text-center mt-4">
-            <p className="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <Button 
               variant="primary" 
               size="lg"
@@ -217,8 +215,8 @@ export default function Home() {
       <section className="py-5 bg-light">
         <Container>
           <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>Our Leadership</h2>
-          <p className="text-center text-muted mb-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <p className="text-center text-muted mb-5 px-3">
+          Meet our dedicated team of experienced educators and administrators committed to academic excellence and student success.
           </p>
           <Row>
             {leadership.map((leader, index) => (
@@ -248,7 +246,6 @@ export default function Home() {
             ))}
           </Row>
           <div className="text-center mt-4">
-            <p className="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <h3 className="text-center mb-5">Contact Us</h3>
         </Container>
