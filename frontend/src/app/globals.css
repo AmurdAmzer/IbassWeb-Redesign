@@ -99,6 +99,30 @@ section {
   padding-right: 1 rem;
 }
 
+/* About image responsive sizes */
+.about-image {
+  min-height: 250px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-image {
+    min-height: 350px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-image {
+    min-height: 500px !important;
+  }
+}
+
+/* Specific for iPad Pro */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .about-image {
+    min-height: 600px !important;
+  }
+}
+
 /* Make navbar-brand text smaller on small/mobile screens */
 @media (max-width: 576px) {
   .hero-section .container {
@@ -107,10 +131,25 @@ section {
     max-width: 100%;
   }
   .navbar-brand {
-    font-size: 1rem !important; /* reduce font size */
-    white-space: nowrap;        /* prevent wrapping */
+    font-size: 1rem !important;
+    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;   /* add ... if text overflows */
-    max-width: 80%;            /* restrict max width to leave space for hamburger */
+    text-overflow: ellipsis;
+    max-width: 80%;
+  }
+}
+
+/* Responsive navigation */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .navbar-nav .nav-link {
+    padding: 0.5rem 0.5rem !important;
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar-nav .nav-link {
+    padding: 0.5rem 0.4rem !important;
+    font-size: 0.85rem !important;
   }
 }

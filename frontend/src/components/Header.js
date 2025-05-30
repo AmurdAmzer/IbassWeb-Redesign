@@ -45,7 +45,7 @@ export default function Header() {
                 key={item.label}
                 as={Link}
                 href={item.href}
-                className="px-3"
+                className="nav-link-responsive"
                 style={{
                   color: '#090A46',
                   fontWeight: '500',

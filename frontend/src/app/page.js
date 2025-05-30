@@ -85,15 +85,19 @@ export default function Home() {
       <section className="py-5 bg-light">
         <Container>
           <Row className="align-items-center">
-            <Col lg={5} className="mb-4 mb-lg-0 order-2 order-lg-1">
+            <Col lg={6} md={12} className="mb-4 mb-lg-0 order-2 order-lg-1">
               <img 
                 src="/images/about-us.jpg" 
                 alt="About Ibadur Rahman Academy" 
-                className="img-fluid rounded shadow"
-                style={{ width: '100%', height: 'auto' }}
+                className="img-fluid rounded shadow about-image"
+                style={{ 
+                  width: '100%', 
+                  height: 'auto',
+                  objectFit: 'cover',
+                }}
               />
             </Col>
-            <Col lg={7} className='order-1 order-lg-2'>
+            <Col lg={6} md={12} className='order-1 order-lg-2'>
               <Row>
                 {/* About Us Card */}
                 <Col md={12} className="mb-4">
