@@ -94,8 +94,18 @@ section {
   color: var(--school-gold);
 }
 
+.hero-section {
+  padding-left: 1 rem;
+  padding-right: 1 rem;
+}
+
 /* Make navbar-brand text smaller on small/mobile screens */
 @media (max-width: 576px) {
+  .hero-section .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    max-width: 100%;
+  }
   .navbar-brand {
     font-size: 1rem !important; /* reduce font size */
     white-space: nowrap;        /* prevent wrapping */

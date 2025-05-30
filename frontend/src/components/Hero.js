@@ -28,25 +28,35 @@ export default function Hero() {
       className="hero-section text-white d-flex align-items-center position-relative"
       style={{
         minHeight: '600px',
+        padding: '0 1rem',
         background: 'linear-gradient(rgba(9, 10, 70, 0.9), rgba(9, 10, 70, 0.9)), url(/images/hero-bg.jpg) center/cover',
         backgroundBlendMode: 'overlay',
-        backgroundColor: '#090A46'
+        backgroundColor: '#090A46',
+        overflowX: 'hidden',
       }}
     >
       <Container>
         <div className="text-center">
-          <h3 className="display-4 mb-4 text-white">
+          <h3 className="display-4 mb-4 text-white" 
+          style={{ fontSize: 'clamp(1.2rem, 4vw, 2rem)' }}>
             Welcome to
           </h3>
-          <h1 className="display-1 fw-bold mb-4 text-white" >
+          <h1 className="display-3 display-md-1 fw-bold mb-4 text-white" style={{fontSize: 'clamp(1.8rem, 6vw, 3.5rem)',
+            textAlign: 'center',
+            whiteSpace: 'normal',
+            wordBreak: 'break-word',
+            overflowWrap: 'break-word',
+          }}>
             IBADUR RAHMAN ACADEMY
           </h1>
-          <p className="lead mb-5 text-white" style={{ fontSize: '1.5rem' }}>
-            Welcome to Ibadur Rahman School, where we nurture curiosity and foster a love for learning.
-            <br />
-            Join us in our mission to create a supportive environment that inspires students to achieve their
-            <br />
-            full potential.
+          <p 
+            className="lead mb-5 text-white" 
+            style={{ fontSize: 'clamp(1rem, 3.5vw, 1.4rem)', lineHeight: '1.6' }}>
+              Welcome to Ibadur Rahman School, where we nurture curiosity and foster a love for learning.
+              <br />
+              Join us in our mission to create a supportive environment that inspires students to achieve their
+              <br />
+              full potential.
           </p>
           <button 
             className="btn btn-lg px-5 py-3"
