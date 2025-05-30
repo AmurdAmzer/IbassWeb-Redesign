@@ -70,7 +70,7 @@ export default function Home() {
     },
     {
       name: 'Ustaaz',
-      position: 'Job title',
+      position: 'Imaam',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
       image: '/images/ustaaz.jpg'
     }
@@ -99,7 +99,7 @@ export default function Home() {
                 <Col md={12} className="mb-4">
                   <Card className="h-100 border-0 shadow">
                     <Card.Body className="p-4">
-                      <h2 className="text-center mb-3">About Us</h2>
+                      <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>About Us</h2>
                       <p className="mb-3">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius 
                         enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros 
@@ -146,7 +146,7 @@ export default function Home() {
       {/* Our Departments Section */}
       <section className="py-5" style={{backgroundColor: '#e9ecef'}}>
         <Container>
-          <h2 className="text-center mb-3">Our Departments</h2>
+          <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>Our Departments</h2>
           <p className="text-center text-muted mb-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
@@ -179,7 +179,7 @@ export default function Home() {
       {/* News and Articles Section - Carousel */}
       <section className="py-5">
         <Container>
-          <h2 className="text-center mb-5">News and Articles</h2>
+          <h2 className="text-center mb-5" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>News and Articles</h2>
           <Row>
             <Col lg={10} className="mx-auto">
               <Carousel indicators={true} controls={true} interval={5000}>
@@ -212,7 +212,7 @@ export default function Home() {
       {/* Our Leadership Section */}
       <section className="py-5 bg-light">
         <Container>
-          <h2 className="text-center mb-3">Our Leadership</h2>
+          <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>Our Leadership</h2>
           <p className="text-center text-muted mb-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
@@ -244,15 +244,15 @@ export default function Home() {
             ))}
           </Row>
           <div className="text-center mt-4">
-            <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p className="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
+          <h3 className="text-center mb-5">Contact Us</h3>
         </Container>
       </section>
 
       {/* Explore Section */}
       <section className="py-5">
         <Container>
-          <h2 className="text-center mb-5">Explore</h2>
           <Row>
             <Col lg={10} className="mx-auto">
               <div className="text-center">

@@ -19,16 +19,18 @@ export default function Footer() {
     <footer style={{ backgroundColor: '#030419', color: 'white', padding: '60px 0 30px' }}>
       <Container>
         <Row>
-          <Col lg={4} md={6} className="mb-4">
+          <Col lg={3} md={6} className="mb-4">
             <h5 className="mb-3 text-white">Address:</h5>
-            <p>Level 1, 12 Sample St, Sydney NSW 2000</p>
+            <p>Buobai Kumasi Ghana</p>
             
             <h5 className="mb-3 mt-4 text-white">Contact:</h5>
             <p>
-              1800 123 456<br />
-              info@ibadurrahman.edu.au
+              01223456789<br />
+              ibadurrahmanshs@gmail.com
             </p>
           </Col>
+
+          <Col lg={1}></Col> {/* Empty spacer column */}
           
           <Col lg={8} md={6}>
             <Row>
