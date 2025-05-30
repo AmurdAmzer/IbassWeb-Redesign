@@ -1,8 +1,10 @@
 // app/page.js
+/* eslint-disable react/no-unescaped-entities */
 'use client'
 
 import { Container, Row, Col, Card, Button, Carousel } from 'react-bootstrap'
 import Hero from '../components/Hero'
+import Image from 'next/image'
 
 export default function Home() {
   const departments = [
