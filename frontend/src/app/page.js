@@ -4,7 +4,6 @@
 
 import { Container, Row, Col, Card, Button, Carousel } from 'react-bootstrap'
 import Hero from '../components/Hero'
-import Image from 'next/image'
 
 export default function Home() {
   const departments = [
@@ -211,7 +210,7 @@ export default function Home() {
       </section>
 
       {/* Our Leadership Section */}
-      <section className="py-5 bg-light">
+      <section className="py-5" style={{backgroundColor: '#e9ecef'}}>
         <Container>
           <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>Our Leadership</h2>
           <p className="text-center text-muted mb-5 px-3">
