@@ -8,21 +8,36 @@ export default function AboutUsPage() {
       {/* About Us Section */}
       <section className="py-5 ">    
         <Container className="text-center">
-            <Row> <h1 className="text-center mb-3" style={{
-                        background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom',
-                        backgroundSize: '80% 3px',
-                        paddingBottom: '15px',
-                        width: 'fit-content',
-                        margin: '0 auto 1rem auto',
-                        fontSize: '2.5rem',
-                      }}>
-                        About<br/> 
-                        Ibadur Rahman Academy
-                      </h1></Row>
+        <Row>
+            <Col>
+                <div className="text-center mb-3" >
+                <div style={{
+                    fontSize: '1.9rem',
+                    color: '#555',
+                    color: 'var(--school-blue)',
+                    marginBottom: '0.1rem'
+                }}>
+                    About
+                </div>
+                <div style={{
+                    fontSize: '2.5rem',
+                    fontWeight: '500',
+                    color: 'var(--school-blue)',
+                    background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom',
+                    backgroundSize: '80% 3px',
+                    paddingBottom: '10px',
+                    display: 'inline-block'
+                }}>
+                    Ibadur Rahman Academy
+                </div>
+                </div>
+            </Col>
+        </Row>
+
         </Container>
       </section>
 
-      <section className="py-5 bg-light">
+      <section className="py-5" style={{backgroundColor: '#e9ecef'}}>
         <Container>
           <Row className="align-items-center">
             <Col lg={6} md={12} className="mb-4 mb-lg-0 order-2 order-lg-1">
@@ -40,7 +55,7 @@ export default function AboutUsPage() {
 
             <Col lg={6} md={12} className="order-1 order-lg-2">
               <Row>
-                {/* About Us Card */}
+                {/* History Card */}
                 <Col md={12} className="mb-4">
                   <Card className="h-100 text-center border-0 shadow">
                     <Card.Body className="p-4">
@@ -51,7 +66,7 @@ export default function AboutUsPage() {
                         width: 'fit-content',
                         margin: '0 auto 1rem auto'
                       }}>
-                        About Us
+                        History
                       </h2>
                       <p className="mb-3 text-muted">
                         Ibadur Rahman Academy is a private senior high school located at Buobai in the Asokore Mampong Municipality. The school was established by the Ibadur Rahman Association Inc., a Non-Governmental organisation made up of most / predominant Ghanaian Muslim residing and working in the United State of America (USA).
