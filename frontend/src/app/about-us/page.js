@@ -6,6 +6,22 @@ export default function AboutUsPage() {
   return (
     <>
       {/* About Us Section */}
+      <section className="py-5 ">    
+        <Container className="text-center">
+            <Row> <h1 className="text-center mb-3" style={{
+                        background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom',
+                        backgroundSize: '80% 3px',
+                        paddingBottom: '15px',
+                        width: 'fit-content',
+                        margin: '0 auto 1rem auto',
+                        fontSize: '2.5rem',
+                      }}>
+                        About<br/> 
+                        Ibadur Rahman Academy
+                      </h1></Row>
+        </Container>
+      </section>
+
       <section className="py-5 bg-light">
         <Container>
           <Row className="align-items-center">
