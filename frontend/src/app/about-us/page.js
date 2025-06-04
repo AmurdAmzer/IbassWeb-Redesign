@@ -66,19 +66,19 @@ export default function AboutUsPage() {
       </section>
 
       <section className="py-5" style={{backgroundColor: '#e9ecef'}}>
-        <Container className="px-4 px-md-0">
-          <Row className="align-items-center">
+        <Container className="px-3 px-md-0">
+          <Row className="align-items-stretch">
             <Col lg={6} md={12} className="mb-4 mb-lg-0 order-2 order-lg-1">
-              <img 
-                src="/images/about-us.jpg" 
-                alt="About Ibadur Rahman Academy" 
-                className="img-fluid rounded shadow about-image"
-                style={{ 
-                  width: '100%', 
-                  height: 'auto',
-                  objectFit: 'cover',
-                }}
-              />
+                <img 
+                    src="/images/about-us.jpg" 
+                    alt="About Ibadur Rahman Academy" 
+                    className="img-fluid rounded shadow about-image"
+                    style={{ 
+                    width: '100%', 
+                    height: 'auto',
+                    objectFit: 'cover',
+                    }}
+                />
             </Col>
 
             <Col lg={6} md={12} className="order-1 order-lg-2">
@@ -96,11 +96,17 @@ export default function AboutUsPage() {
                       }}>
                         History
                       </h2>
-                      <p className="mb-3 text-muted">
-                        Ibadur Rahman Academy is a private senior high school located at Buobai in the Asokore Mampong Municipality. The school was established by the Ibadur Rahman Association Inc., a Non-Governmental organisation made up of most / predominant Ghanaian Muslim residing and working in the United State of America (USA).
+                      <p className="mb-2 text-muted">
+                      Ibadur Rahman Academy is a public senior high school located in Buobai, Asokore Mampong Municipality, established by the Ibadur Rahman Association Inc., a non-governmental organization comprising Ghanaian Muslims residing and working in the United States. The idea to establish the school was conceived during one of their meetings in 2005, leading to fundraising efforts and land acquisition for the school project.
                       </p>
-                      <p className="mb-0 text-muted">
-                        Their main aim for establishing the school is to provide secondary education to the poor and needy students in Kumasi, Ashanti Region in particular and Ghana as a whole.
+                      <p className="mb-2 text-muted">
+                      The school's primary mission is to provide affordable, quality secondary education to poor and needy students in Kumasi, Ashanti Region, and throughout Ghana. The founders aim to raise educational standards among Muslims by establishing educational institutions in cities and deprived areas, while sponsoring both Muslim and non-Muslim children to pursue higher education.
+                      </p>
+                      <p className="mb-2 text-muted">
+                      The academy addresses the need for affordable education, giving Muslim parents who cannot afford high public school fees access to quality secondary education at lower costs. Additionally, it enables Muslim students to obtain knowledge about their religion alongside formal secular education.
+                      </p>
+                      <p className="mb-2 text-muted">
+                      Registered with Ghana Education Service in 2012 (Registration: AR/KM-K/S.H.S/P1068), the school officially began operations in the 2013/2014 academic year. It has been led by Mr. Alhaji A.A. Darmanu, Madam Nima Abdul Rahman (resigned 2019), and Abdul Jamal Adam (until January 2022). The school holds West African School Certificate Examination Centre Number 0051610.
                       </p>
                     </Card.Body>
                   </Card>
@@ -114,7 +120,7 @@ export default function AboutUsPage() {
 
       {        /* Mission and Vision Section */ }
         <section className="py-5">
-            <Container className="px-4 px-md-0">
+            <Container className="px-3 px-md-0">
                 <Row className="text-center">
                     <Col>
                     <h2 className="mb-4" style={{
