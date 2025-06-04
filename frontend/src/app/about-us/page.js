@@ -38,15 +38,6 @@ export default function AboutUsPage() {
         <Container className="text-center">
         <Row>
             <Col>
-                <div className="text-center mb-3" >
-                <div style={{
-                    fontSize: '1.9rem',
-                    color: '#555',
-                    color: 'var(--school-blue)',
-                    marginBottom: '0.1rem'
-                }}>
-                    About
-                </div>
                 <div style={{
                     fontSize: '2.5rem',
                     fontWeight: '500',
@@ -56,8 +47,7 @@ export default function AboutUsPage() {
                     paddingBottom: '10px',
                     display: 'inline-block'
                 }}>
-                    Ibadur Rahman Academy
-                </div>
+                    About Us
                 </div>
             </Col>
         </Row>
