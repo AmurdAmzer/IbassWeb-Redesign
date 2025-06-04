@@ -66,7 +66,7 @@ export default function AboutUsPage() {
       </section>
 
       <section className="py-5" style={{backgroundColor: '#e9ecef'}}>
-        <Container>
+        <Container className="px-4 px-md-0">
           <Row className="align-items-center">
             <Col lg={6} md={12} className="mb-4 mb-lg-0 order-2 order-lg-1">
               <img 
@@ -114,48 +114,52 @@ export default function AboutUsPage() {
 
       {        /* Mission and Vision Section */ }
         <section className="py-5">
-            <Container>
-            <Row className="text-center">
-                <Col>
-                <h2 className="mb-4" style={{
-                    background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom',
-                    backgroundSize: '80% 3px',
-                    paddingBottom: '15px',
-                    width: 'fit-content',
-                    margin: '0 auto'
-                }}>
-                    Mission and Vision
-                </h2>
-                </Col>
-            </Row>
-            <Row className="text-center">
-                <Col md={6} className="mb-4">
-                <Card className="h-100 border-0 shadow">
-                    <Card.Body>
-                    <h3 className="mb-3">Mission</h3>
-                    <p className="text-muted">
-                        To provide quality education that empowers students to achieve their full potential and become responsible citizens.
-                    </p>
-                    </Card.Body>
-                </Card>
-                </Col>
-                <Col md={6}>
-                <Card className="h-100 border-0 shadow">
-                    <Card.Body>
-                    <h3 className="mb-3">Vision</h3>
-                    <p className="text-muted">
-                        To be a leading educational institution recognized for excellence in academics, character development, and community service.
-                    </p>
-                    </Card.Body>
-                </Card>
-                </Col>
-            </Row>
+            <Container className="px-4 px-md-0">
+                <Row className="text-center">
+                    <Col>
+                    <h2 className="mb-4" style={{
+                        background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom',
+                        backgroundSize: '80% 3px',
+                        paddingBottom: '15px',
+                        width: 'fit-content',
+                        margin: '0 auto'
+                    }}>
+                        Mission and Vision
+                    </h2>
+                    </Col>
+                </Row>
+                <Row className="text-center">
+                    <Col md={6} className="mb-4 d-flex">
+                    <Card className="w-100 h-100 border-0 shadow">
+                        <Card.Body className="d-flex flex-column justify-content-between">
+                            <div>
+                            <h3 className="mb-3">Mission</h3>
+                            <p className="text-muted">
+                                To provide quality education that empowers students to achieve their full potential and become responsible citizens.
+                            </p>
+                            </div>
+                        </Card.Body>
+                    </Card>
+                    </Col>
+                    <Col md={6} className="mb-4 d-flex">
+                    <Card className="w-100 h-100 border-0 shadow">
+                        <Card.Body className="d-flex flex-column justify-content-between">
+                            <div>
+                            <h3 className="mb-3">Vision</h3>
+                            <p className="text-muted">
+                                To be a leading educational institution recognized for excellence in academics, character development, and community service.
+                            </p>
+                            </div>
+                        </Card.Body>
+                    </Card>
+                    </Col>
+                </Row>
             </Container>
         </section>
 
         {/* Founders Section */}
         <section className="py-5" style={{backgroundColor: '#e9ecef'}}>
-        <Container>
+        <Container className="px-4 px-md-0">
           <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>Our Founders</h2>
           <p className="text-center text-muted mb-5 px-3">
           Meet our dedicated team of experienced educators and administrators committed to academic excellence and student success.
@@ -175,6 +179,7 @@ export default function AboutUsPage() {
                         backgroundImage: `url(${leader.image})`,
                         backgroundSize: 'contain',
                         backgroundRepeat: 'no-repeat',
+                        backgroundColor: 'transparent',
                         backgroundPosition: 'center'
                       }}
                     />

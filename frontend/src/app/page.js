@@ -84,7 +84,7 @@ export default function Home() {
 
       {/* About Us Section */}
       <section className="py-5 bg-light">
-        <Container>
+        <Container className="px-4 px-md-0">
           <Row className="align-items-center">
             <Col lg={6} md={12} className="mb-4 mb-lg-0 order-2 order-lg-1">
               <img 
@@ -146,7 +146,7 @@ export default function Home() {
 
       {/* Our Departments Section */}
       <section className="py-5" style={{backgroundColor: '#e9ecef'}}>
-        <Container>
+        <Container className="px-4 px-md-0">
           <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>Our Departments</h2>
           <p className="text-center text-muted mb-5 px-3">
           Explore our diverse academic programs designed to nurture every student's potential and prepare them for successful futures.
@@ -178,7 +178,7 @@ export default function Home() {
 
       {/* News and Articles Section - Carousel */}
       <section className="py-5">
-        <Container>
+        <Container >
           <h2 className="text-center mb-5" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>News and Articles</h2>
           <Row>
             <Col lg={10} className="mx-auto">
@@ -211,7 +211,7 @@ export default function Home() {
 
       {/* Our Leadership Section */}
       <section className="py-5" style={{backgroundColor: '#e9ecef'}}>
-        <Container>
+        <Container className="px-4 px-md-0">
           <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>Our Leadership</h2>
           <p className="text-center text-muted mb-5 px-3">
           Meet our dedicated team of experienced educators and administrators committed to academic excellence and student success.
