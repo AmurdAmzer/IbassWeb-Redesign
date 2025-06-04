@@ -90,7 +90,7 @@ export default function AboutUsPage() {
                       Ibadur Rahman Academy is a public senior high school located in Buobai, Asokore Mampong Municipality, established by the Ibadur Rahman Association Inc., a non-governmental organization comprising Ghanaian Muslims residing and working in the United States. The idea to establish the school was conceived during one of their meetings in 2005, leading to fundraising efforts and land acquisition for the school project.
                       </p>
                       <p className="mb-2 text-muted">
-                      The school's primary mission is to provide affordable, quality secondary education to poor and needy students in Kumasi, Ashanti Region, and throughout Ghana. The founders aim to raise educational standards among Muslims by establishing educational institutions in cities and deprived areas, while sponsoring both Muslim and non-Muslim children to pursue higher education.
+                      The school&#39;s primary mission is to provide affordable, quality secondary education to poor and needy students in Kumasi, Ashanti Region, and throughout Ghana. The founders aim to raise educational standards among Muslims by establishing educational institutions in cities and deprived areas, while sponsoring both Muslim and non-Muslim children to pursue higher education.
                       </p>
                       <p className="mb-2 text-muted">
                       The academy addresses the need for affordable education, giving Muslim parents who cannot afford high public school fees access to quality secondary education at lower costs. Additionally, it enables Muslim students to obtain knowledge about their religion alongside formal secular education.
