@@ -78,34 +78,52 @@ export default function AboutUsPage() {
                   </Card>
                 </Col>
 
-                {/* Vision Card */}
-                <Col md={6} className="mb-4">
-                  <Card className="h-100 text-center border-0 shadow">
-                    <Card.Body className="p-4">
-                      <h3 className="mb-3" style={{ color: 'var(--school-blue)' }}>Vision</h3>
-                      <p className="text-muted">
-                        A thriving academy of choice, excelling beyond Ghana to be one of the outstanding academic institutions in the areas of sciences, arts and sports
-                      </p>
-                    </Card.Body>
-                  </Card>
-                </Col>
-
-                {/* Mission Card */}
-                <Col md={6} className="mb-4">
-                  <Card className="h-100 text-center border-0 shadow">
-                    <Card.Body className="p-4">
-                      <h3 className="mb-3" style={{ color: 'var(--school-blue)' }}>Mission</h3>
-                      <p className="text-muted">
-                        To motivate the development of a holistic sense of self by belonging to an academy which values excellence, creativity and responsible citizenry.
-                      </p>
-                    </Card.Body>
-                  </Card>
-                </Col>
               </Row>
             </Col>
           </Row>
         </Container>
       </section>
+
+      {        /* Mission and Vision Section */ }
+        <section className="py-5">
+            <Container>
+            <Row className="text-center">
+                <Col>
+                <h2 className="mb-4" style={{
+                    background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom',
+                    backgroundSize: '80% 3px',
+                    paddingBottom: '15px',
+                    width: 'fit-content',
+                    margin: '0 auto'
+                }}>
+                    Mission and Vision
+                </h2>
+                </Col>
+            </Row>
+            <Row className="text-center">
+                <Col md={6} className="mb-4">
+                <Card className="h-100 border-0 shadow">
+                    <Card.Body>
+                    <h3 className="mb-3">Mission</h3>
+                    <p className="text-muted">
+                        To provide quality education that empowers students to achieve their full potential and become responsible citizens.
+                    </p>
+                    </Card.Body>
+                </Card>
+                </Col>
+                <Col md={6}>
+                <Card className="h-100 border-0 shadow">
+                    <Card.Body>
+                    <h3 className="mb-3">Vision</h3>
+                    <p className="text-muted">
+                        To be a leading educational institution recognized for excellence in academics, character development, and community service.
+                    </p>
+                    </Card.Body>
+                </Card>
+                </Col>
+            </Row>
+            </Container>
+        </section>
 
       {/* School Rules and Anthem to be added later */}
     </>
