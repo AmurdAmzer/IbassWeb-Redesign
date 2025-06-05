@@ -222,7 +222,7 @@ export default function AboutUsPage() {
                         Hail Ibadur Rahman <br />
                         Alma Mater of us all <br />
                         Ibadur Rahman is our school <br />
-                        We shall be the nation's pride <br />
+                        We shall be the nation&#39;s pride <br />
                         We shall work from dusk to dawn <br />
                         Allah give us strength to uphold justice with all our strength and might <br /><br />
 
@@ -233,7 +233,7 @@ export default function AboutUsPage() {
                         Hail Ibadur Rahman <br />
                         We shall be our parents&#39; pride <br />
                         We shall overcome the obstacles to be the nation&#39;s pride <br />
-                        True NOBLES we'll be Allah's will so shall be <br />
+                        True NOBLES we&#39;ll be Allah&#39;s will so shall be <br />
                         Service to humanity is service to Almighty <br /><br />
 
                         Chorus 2x <br />
