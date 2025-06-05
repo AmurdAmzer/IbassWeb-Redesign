@@ -4,6 +4,7 @@
 
 import { Container, Row, Col, Card, Button, Carousel } from 'react-bootstrap'
 import Hero from '../components/Hero'
+import Image from 'next/image'
 
 export default function Home() {
   const departments = [
@@ -87,10 +88,12 @@ export default function Home() {
         <Container className="px-3 px-md-0">
           <Row className="align-items-center">
             <Col lg={6} md={12} className="mb-4 mb-lg-0 order-2 order-lg-1">
-              <img 
+              <Image 
                 src="/images/about-us.jpg" 
                 alt="About Ibadur Rahman Academy" 
-                className="img-fluid rounded shadow about-image"
+                width={500}  
+                height={400}
+                className="rounded shadow about-image"
                 style={{ 
                   width: '100%', 
                   height: 'auto',
