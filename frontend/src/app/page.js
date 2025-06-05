@@ -84,7 +84,7 @@ export default function Home() {
 
       {/* About Us Section */}
       <section className="py-5 bg-light">
-        <Container className="px-4 px-md-0">
+        <Container className="px-3 px-md-0">
           <Row className="align-items-center">
             <Col lg={6} md={12} className="mb-4 mb-lg-0 order-2 order-lg-1">
               <img 
@@ -242,22 +242,6 @@ export default function Home() {
                 </Card>
               </Col>
             ))}
-          </Row>
-          <div className="text-center mt-4">
-          </div>
-          <h3 className="text-center mb-5">Contact Us</h3>
-        </Container>
-      </section>
-
-      {/* Explore Section */}
-      <section className="py-5">
-        <Container>
-          <Row>
-            <Col lg={10} className="mx-auto">
-              <div className="text-center">
-                {/* Add explore content here if needed */}
-              </div>
-            </Col>
           </Row>
         </Container>
       </section>
