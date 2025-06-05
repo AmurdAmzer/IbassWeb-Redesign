@@ -11,7 +11,7 @@ export default function DepartmentPage() {
             <Container className="px-4 px-md-0">
             <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>Our Departments</h2>
             <p className="text-center text-muted mb-5 px-3">
-            Explore our diverse academic programs designed to nurture every student's potential and prepare them for successful futures.
+            Explore our diverse academic programs designed to nurture every student&#39;s potential and prepare them for successful futures.
             </p>
             </Container>
         </section>
