@@ -84,6 +84,11 @@ export default function Home() {
       <Hero />
 
       {/* About Us Section */}
+      <section className="py-5">
+            <Container className="px-4 px-md-0">
+              <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>About Us</h2>
+            </Container>
+          </section>
       <section className="py-5 bg-light">
         <Container className="px-3 px-md-0">
           <Row className="align-items-center">
@@ -92,7 +97,7 @@ export default function Home() {
                 src="/images/about-us.jpg" 
                 alt="About Ibadur Rahman Academy" 
                 width={500}  
-                height={400}
+                height={1000}
                 className="rounded shadow about-image"
                 style={{ 
                   width: '100%', 
@@ -107,7 +112,7 @@ export default function Home() {
                 <Col md={12} className="mb-4">
                   <Card className="h-100 text-center border-0 shadow">
                     <Card.Body className="p-4">
-                      <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>About Us</h2>
+                      <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>History</h2>
                       <p className="mb-3 text-muted">
                       Ibadur Rahman Academy is a private senior high school located at Buobai in the Asokore Mampong Municipality. The school was established by the Ibadur Rahman Association Inc., a Non-Governmental organisation made up of most / predominant Ghanaian Muslim residing and working in the United State of America (USA). 
                       </p>
