@@ -98,7 +98,7 @@ export default function Home() {
                 alt="About Ibadur Rahman Academy" 
                 width={500}  
                 height={1000}
-                className="rounded shadow about-image"
+                className="rounded about-image"
                 style={{ 
                   width: '100%', 
                   height: 'auto',
@@ -111,13 +111,13 @@ export default function Home() {
                 {/* About Us Card */}
                 <Col md={12} className="mb-4">
                   <Card className="h-100 text-center border-0 shadow">
-                    <Card.Body className="p-4">
+                    <Card.Body className="p-3.5">
                       <h3 className="text-center mb-3" style={{ color: 'var(--school-blue)' }}>History</h3>
-                      <p className="mb-3 text-muted">
-                      Ibadur Rahman Academy is a private senior high school located at Buobai in the Asokore Mampong Municipality. The school was established by the Ibadur Rahman Association Inc., a Non-Governmental organisation made up of most / predominant Ghanaian Muslim residing and working in the United State of America (USA). 
+                      <p className="mb-2 text-muted">
+                      Ibadur Rahman Academy is a public senior high school located in Buobai, Asokore Mampong Municipality, established by the Ibadur Rahman Association Inc., a non-governmental organization comprising Ghanaian Muslims residing and working in the United States. The idea to establish the school was conceived during one of their meetings in 2005, leading to fundraising efforts and land acquisition for the school project.
                       </p>
-                      <p className="mb-0 text-muted">
-                      Their main aim for establishing the school is to provide secondary education to the poor and needy students in Kumasi, Ashanti Region in particular and Ghana as a whole. 
+                      <p className="mb-2 text-muted">
+                      The school&#39;s primary mission is to provide affordable, quality secondary education to poor and needy students in Kumasi, Ashanti Region, and throughout Ghana. The founders aim to raise educational standards among Muslims by establishing educational institutions in cities and deprived areas, while sponsoring both Muslim and non-Muslim children to pursue higher education.
                       </p>
                     </Card.Body>
                   </Card>
