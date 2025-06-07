@@ -112,7 +112,7 @@ export default function Home() {
                 <Col md={12} className="mb-4">
                   <Card className="h-100 text-center border-0 shadow">
                     <Card.Body className="p-3.5">
-                      <h3 className="text-center mb-3" style={{ color: 'var(--school-blue)' }}>History</h3>
+                      <h3 className="text-center mb-3" style={{ color: 'var(--school-blue)'}}>History</h3>
                       <p className="mb-2 text-muted">
                       Ibadur Rahman Academy is a public senior high school located in Buobai, Asokore Mampong Municipality, established by the Ibadur Rahman Association Inc., a non-governmental organization comprising Ghanaian Muslims residing and working in the United States. The idea to establish the school was conceived during one of their meetings in 2005, leading to fundraising efforts and land acquisition for the school project.
                       </p>
