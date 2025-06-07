@@ -5,15 +5,15 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 export default function StudentsPage() {
     const prefects = [
         {
-          name: 'Mr. Bashiru Shehu',
+          name: 'Ashraf Muftawu',
           position: 'Boys Prefect',
-          description: 'With over 15 years in educational leadership, Mr. Shehu brings vision and innovation to guide our school towards academic excellence and holistic student development.',
+          description: '2022/2023',
           image: '/images/headmaster.jpg'
         },
         {
-          name: 'Mr. Umar Ali',
-          position: 'Girls Prefect',
-          description: 'A dedicated educator with expertise in curriculum development and student affairs, ensuring our academic programs meet the highest standards of quality education.',
+          name: 'Abubakar Siddick Mohammed',
+          position: 'Assist Boys Prefect' ,
+          description: '2022/2023',
           image: '/images/assistant1.jpg'
         },
         {
