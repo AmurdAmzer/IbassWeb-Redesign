@@ -34,25 +34,13 @@ export default function AboutUsPage() {
   return (
     <>
       {/* About Us Section */}
-      <section className="py-5 ">    
-        <Container className="text-center">
-        <Row>
-            <Col>
-                <div style={{
-                    fontSize: '2.5rem',
-                    fontWeight: '500',
-                    color: 'var(--school-blue)',
-                    background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom',
-                    backgroundSize: '80% 3px',
-                    paddingBottom: '10px',
-                    display: 'inline-block'
-                }}>
-                    About Us
-                </div>
-            </Col>
-        </Row>
-
-        </Container>
+      <section className="py-5">
+            <Container className="px-4 px-md-0">
+              <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>About Us</h2>
+              <p className="text-center text-muted mb-5 px-3">
+              Discover our rich history, mission, and commitment to providing quality education that transforms lives and builds future leaders.
+              </p>
+            </Container>
       </section>
 
       <section className="py-5" style={{backgroundColor: '#e9ecef'}}>
