@@ -5,10 +5,12 @@ import { Container, Navbar, Nav } from 'react-bootstrap'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
+import { useState } from 'react'
 import logo from '/public/images/logo.png' // static import
 
 export default function Header() {
   const pathname = usePathname()
+  const [expanded, setExpanded] = useState(false)
   
   const navItems = [
     { label: 'Home', href: '/' },
@@ -22,7 +24,13 @@ export default function Header() {
   ]
 
   return (
-    <Navbar bg="white" expand="lg" className="py-3 shadow-sm" sticky="top">
+    <Navbar 
+    bg="white" 
+    expand="lg" 
+    className="py-3 shadow-sm" 
+    sticky="top"
+    expanded={expanded}
+    onToggle={setExpanded}>
       <Container>
         <Navbar.Brand as={Link} href="/" className="d-flex align-items-center gap-2">
           <Image
@@ -36,9 +44,9 @@ export default function Header() {
           IBADUR RAHMAN ACADEMY </span>
         </Navbar.Brand>
         
-        <Navbar.Toggle />
+        <Navbar.Toggle aria-controls='basic-navbar-nav' />
         
-        <Navbar.Collapse>
+        <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className="ms-auto">
             {navItems.map((item) => (
               <Nav.Link
@@ -46,6 +54,7 @@ export default function Header() {
                 as={Link}
                 href={item.href}
                 className="nav-link-responsive"
+                onClick={() => setExpanded(false)}
                 style={{
                   color: '#090A46',
                   fontWeight: '500',
