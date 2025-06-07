@@ -77,13 +77,7 @@ export default function AboutUsPage() {
                 <Col md={12} className="mb-4">
                   <Card className="h-100 text-center border-0 shadow">
                     <Card.Body className="p-4">
-                      <h2 className="text-center mb-3" style={{
-                        background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom',
-                        backgroundSize: '80% 3px',
-                        paddingBottom: '15px',
-                        width: 'fit-content',
-                        margin: '0 auto 1rem auto'
-                      }}>
+                      <h2 className="text-center mb-3" style={{ color: 'var(--school-blue)'}}>
                         History
                       </h2>
                       <p className="mb-2 text-muted">
