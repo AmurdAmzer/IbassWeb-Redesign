@@ -62,7 +62,7 @@ export default function AboutUsPage() {
                 <img 
                     src="/images/about-us.jpg" 
                     alt="About Ibadur Rahman Academy" 
-                    className="img-fluid rounded shadow about-image"
+                    className="img-fluid rounded about-image"
                     style={{ 
                     width: '100%', 
                     height: 'auto',
@@ -208,14 +208,7 @@ export default function AboutUsPage() {
           <Row className="align-items-stretch">
             {/* School Anthem Text*/}
                 <Col lg={6} md={12} className="order-1 order-lg-1 mb-4 text-center">
-                <h2 className="text-center mb-3" style={{
-                        background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom',
-                        backgroundSize: '80% 3px',
-                        paddingBottom: '15px',
-                        width: 'fit-content',
-                        margin: '0 auto 1rem auto',
-                        fontSize: '1.5rem',
-                      }}>
+                <h2 className="text-center mb-3" style={{ color: 'var(--school-blue)'}}>
                         Anthem
                 </h2>
                       <p className="mb-2 text-muted">
