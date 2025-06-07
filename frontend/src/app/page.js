@@ -84,13 +84,12 @@ export default function Home() {
       <Hero />
 
       {/* About Us Section */}
-      <section className="py-5">
-            <Container className="px-4 px-md-0">
-              <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>About Us</h2>
-            </Container>
-      </section>
       <section className="py-5 bg-light">
         <Container className="px-3 px-md-0">
+        <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>About Us</h2>
+          <p className="text-center text-muted mb-5 px-3">
+          Discover our rich history, mission, and commitment to providing quality education that transforms lives and builds future leaders.
+          </p>
           <Row className="align-items-center">
             <Col lg={6} md={12} className="mb-4 mb-lg-0 order-2 order-lg-1">
               <Image 
