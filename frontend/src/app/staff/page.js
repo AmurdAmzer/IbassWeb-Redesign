@@ -35,25 +35,25 @@ export default function StaffPage() {
           name: 'Mr. Saeed Sualeh',
           position: 'Mathematics Teacher',
           description: 'Specialized in advanced mathematics with 8 years of teaching experience, helping students excel in mathematical concepts and problem-solving.',
-          image: '/images/teacher1.jpg'
+          image: '/images/rahma.jpg'
         },
         {
           name: 'Mr. Kamilu',
           position: 'Science Teacher',
           description: 'Expert in Biology and Chemistry with a passion for laboratory experiments and scientific research, inspiring the next generation of scientists.',
-          image: '/images/teacher2.jpg'
+          image: '/images/avatar.png'
         },
         {
           name: 'Mr. Muftawu Hussein',
           position: 'ICT Teacher',
           description: 'Literature enthusiast with excellent communication skills, fostering reading culture and effective writing among students.',
-          image: '/images/teacher3.jpg'
+          image: '/images/mufty.jpg'
         },
         {
           name: 'Mr. Abdallah Abdul Rahim',
           position: 'History Teacher',
           description: 'Passionate historian who brings past events to life, helping students understand their heritage and develop critical thinking skills.',
-          image: '/images/teacher4.jpg'
+          image: '/images/abdullah.jpg'
         }
     ];
 
@@ -62,25 +62,25 @@ export default function StaffPage() {
           name: 'Mrs. Bilkiss Ahmed',
           position: 'Librarian',
           description: 'Dedicated library manager who ensures students have access to quality educational resources and maintains an conducive learning environment.',
-          image: '/images/librarian.jpg'
+          image: '/images/avatar.png'
         },
         {
           name: 'Mr. Joseph Mensah',
           position: 'School Accountant',
           description: 'Professional accountant managing school finances with transparency and ensuring proper allocation of educational resources.',
-          image: '/images/accountant.jpg'
+          image: '/images/avatar.png'
         },
         {
           name: 'Mrs. Grace Boateng',
           position: 'School Nurse',
           description: 'Qualified healthcare professional providing medical care and health education to ensure the wellbeing of all students and staff.',
-          image: '/images/nurse.jpg'
+          image: '/images/avatar.png'
         },
         {
           name: 'Mr. Emmanuel Tetteh',
           position: 'Security Officer',
           description: 'Experienced security personnel ensuring the safety and security of the school premises, students, and staff throughout the day.',
-          image: '/images/security.jpg'
+          image: '/images/avatar.png'
         }
     ];
 
