@@ -302,8 +302,7 @@ export default function ContactUsPage() {
                 <Card.Body className="p-0">
                   <div style={{ height: '350px', borderRadius: '0.375rem', overflow: 'hidden' }}>
                     <iframe
-                      src="https://www.google.com/maps/place/Ibadur+Rahman+Academy+SHS/@6.7178437,-1.5605387,17z/data=!3m1!4b1!4m6!3m5!1s0xfdb9509b166bca1:0x7fa6a31c71559e76!8m2!3d6.7178437!4d-1.5579584!16s%2Fg%2F11g6rlk5bv?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D"
-                      width="100%"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15849.67103172481!2d-1.558798682690602!3d6.718768380893207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb9509b166bca1%3A0x7fa6a31c71559e76!2sIbadur%20Rahman%20Academy%20SHS!5e0!3m2!1sen!2sus!4v1749491156930!5m2!1sen!2sus" width="100%"
                       height="350"
                       style={{ border: 0 }}
                       allowFullScreen=""
