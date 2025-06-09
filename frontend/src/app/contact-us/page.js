@@ -86,7 +86,7 @@ export default function ContactUsPage() {
             Contact Us
           </h2>
           <p className="text-center text-muted mb-5 px-3">
-            We're here to help! Reach out to us for admissions, general inquiries, or any questions about Ibadur Rahman Academy.
+            We&apos;re here to help! Reach out to us for admissions, general inquiries, or any questions about Ibadur Rahman Academy.
           </p>
         </Container>
       </section>
