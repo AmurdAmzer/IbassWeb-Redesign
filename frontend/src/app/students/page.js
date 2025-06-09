@@ -66,7 +66,7 @@ export default function StudentsPage() {
                       <Card className="h-100 text-center border-0">
                         <Card.Body className="p-4">
                           <h2 className="text-center mb-3" style={{ color: 'var(--school-blue)'}}>
-                          Students' Representative Council (SRC)
+                          Students&#39; Representative Council (SRC)
                           </h2>
                           <p className="mb-2 text-muted">
                           About Ibadur Rahman Academy SRC
