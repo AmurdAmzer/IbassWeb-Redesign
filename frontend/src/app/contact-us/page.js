@@ -147,7 +147,7 @@ export default function ContactUsPage() {
               
               {showAlert && (
                 <Alert variant="success" className="mb-4">
-                  <strong>Message sent successfully!</strong> We'll get back to you within 24-48 hours.
+                  <strong>Message sent successfully!</strong> We&apos;ll get back to you within 24-48 hours.
                 </Alert>
               )}
 
