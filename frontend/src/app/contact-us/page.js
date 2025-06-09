@@ -70,11 +70,10 @@ export default function ContactUsPage() {
   ]
 
   const socialLinks = [
-    { platform: 'Facebook', icon: '📘', url: '#', color: '#1877F2' },
-    { platform: 'Twitter', icon: '🐦', url: '#', color: '#1DA1F2' },
-    { platform: 'Instagram', icon: '📷', url: '#', color: '#E4405F' },
-    { platform: 'YouTube', icon: '📺', url: '#', color: '#FF0000' },
-    { platform: 'LinkedIn', icon: '💼', url: '#', color: '#0A66C2' }
+    { platform: 'Facebook', icon: '📘', url: '#' },
+    { platform: 'TikTok', icon: '🐦', url: '#'},
+    { platform: 'YouTube', icon: '📺', url: '#'},
+    { platform: 'LinkedIn', icon: '💼', url: '#'}
   ]
 
   return (
@@ -116,7 +115,7 @@ export default function ContactUsPage() {
               ))}
 
               {/* Social Media Links */}
-              <div className="mt-4">
+             {/* <div className="mt-4">
                 <h6 className="mb-3" style={{ color: 'var(--school-blue)' }}>Follow Us</h6>
                 <div className="d-flex gap-2">
                   {socialLinks.map((social, index) => (
@@ -137,8 +136,8 @@ export default function ContactUsPage() {
                       {social.icon}
                     </a>
                   ))}
-                </div>
-              </div>
+                </div> 
+              </div> */}
             </Col>
 
             {/* Contact Form */}
