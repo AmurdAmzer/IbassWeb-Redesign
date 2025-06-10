@@ -3,14 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "npm run build-search && next dev",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build-search": "node scripts/generateSearchIndex.js",
+    "build": "npm run build-search && next build"
   },
   "dependencies": {
     "bootstrap": "^5.3.6",
     "emailjs-com": "^3.2.0",
+    "fuse.js": "^7.1.0",
+    "gray-matter": "^4.0.3",
     "next": "15.3.2",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.10",
