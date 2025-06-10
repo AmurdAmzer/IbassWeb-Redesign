@@ -56,12 +56,12 @@ export default function Footer() {
               </div>
 
               {/* Social Media */}
-              <div className="d-flex gap-2 mt-3">
+              {/*<div className="d-flex gap-2 mt-3">
                 <a href="#" style={{ color: '#4267B2', fontSize: '1.5rem' }}>📘</a>
                 <a href="#" style={{ color: '#FF0000', fontSize: '1.5rem' }}>📺</a>
                 <a href="#" style={{ color: '#000000', fontSize: '1.5rem' }}>🎵</a>
                 <a href="#" style={{ color: '#0A66C2', fontSize: '1.5rem' }}>💼</a>
-              </div>
+              </div>*/}
             </Col>
 
             <Col lg={1}></Col> {/* Spacer */}
