@@ -135,16 +135,12 @@ export default function Footer() {
       <section style={{ backgroundColor: '#000', color: 'white', padding: '20px 0', textAlign: 'center' }}>
         <Container>
           <Row className="align-items-center">
-            <Col md={6}>
               <p className="mb-0 text-white-50">
                 © 2025 Ibadur Rahman Academy. <br/> All rights reserved.
               </p> <br />
-            </Col>
-            <Col md={6} className="text-md-end">
               <p className="mb-0 text-white-50">
                 Designed by:  <span style={{ color: 'white' }}>ICT Department</span>
               </p>
-            </Col>
           </Row>
         </Container>
       </section>
