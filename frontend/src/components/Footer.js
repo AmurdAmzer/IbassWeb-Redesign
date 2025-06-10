@@ -137,7 +137,7 @@ export default function Footer() {
           <Row className="align-items-center">
             <Col md={6}>
               <p className="mb-0 text-white-50">
-                © 2025 Ibadur Rahman Academy. All rights reserved.
+                © 2025 Ibadur Rahman Academy. <br/> All rights reserved.
               </p> <br />
             </Col>
             <Col md={6} className="text-md-end">
