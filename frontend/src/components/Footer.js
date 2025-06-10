@@ -18,7 +18,7 @@ export default function Footer() {
 
   return (
     <>
-      <footer style={{ textAlign: 'center', backgroundColor: '#030419', color: 'white', padding: '60px 0 30px' }}>
+      <footer style={{ backgroundColor: '#030419', color: 'white', padding: '60px 0 30px' }}>
         <Container>
           <Row>
             {/* Logo and Contact Info */}
