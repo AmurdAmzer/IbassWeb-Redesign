@@ -84,7 +84,7 @@ export default function Home() {
       <Hero />
 
       {/* About Us Section */}
-      <section className="py-5 bg-light">
+      <section className="py-5">
         <Container className="px-3 px-md-0">
         <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>About Us</h2>
           <p className="text-center text-muted mb-5 px-3">
@@ -152,7 +152,7 @@ export default function Home() {
       </section>
 
       {/* Our Departments Section */}
-      <section className="py-5" style={{backgroundColor: '#e9ecef'}}>
+      <section className="py-5 bg-light" >
         <Container className="px-4 px-md-0">
           <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>Our Departments</h2>
           <p className="text-center text-muted mb-5 px-3">
@@ -184,35 +184,59 @@ export default function Home() {
       </section>
 
       {/* News and Articles Section - Carousel */}
-      <section className="py-5">
-        <Container >
-          <h2 className="text-center mb-5" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>News and Articles</h2>
-          <Row>
-            <Col lg={10} className="mx-auto">
-              <Carousel indicators={true} controls={true} interval={5000}>
-                {newsArticles.map((article) => (
-                  <Carousel.Item key={article.id}>
-                    <Card className="border-0 shadow mx-auto" style={{ maxWidth: '100%' }}>
-                      <Card.Img 
-                        variant="top" 
-                        src={article.image} 
-                        style={{ height: '400px', objectFit: 'cover' }}
-                      />
-                      <Card.Body className="p-4">
-                        <h3>{article.title}</h3>
-                        <p className="text-muted">
-                          {article.description}
-                        </p>
-                        <Button variant="link" className="p-0" style={{ color: 'var(--school-blue)' }}>
-                          Learn More →
-                        </Button>
-                      </Card.Body>
-                    </Card>
-                  </Carousel.Item>
-                ))}
-              </Carousel>
-            </Col>
-          </Row>
+      {/* News Section - Improved */}
+      {/* News Section - Full Width */}
+      <section className="py-5" style={{
+        background: 'linear-gradient(45deg, rgba(0,0,0,0.8) 0%, rgba(9,10,70,0.7) 100%)',
+        margin: '0',
+        width: '100%'
+      }}>
+        <Container fluid className="px-0">
+          <Container>
+            <h2 className="text-center mb-5 text-white" style={{background: 'linear-gradient(to right, transparent, white, transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 3rem auto'}}>News and Articles</h2>
+          </Container>
+          
+          <Carousel indicators={true} controls={true} interval={5000} className="w-100">
+            {newsArticles.map((article) => (
+              <Carousel.Item key={article.id}>
+                <div className="position-relative" style={{ height: '600px', width: '100vw', marginLeft: 'calc(-50vw + 50%)' }}>
+                  <Image
+                    src={article.image}
+                    alt={article.title}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                  />
+                  <div className="position-absolute w-100 h-100" style={{
+                    background: 'linear-gradient(45deg, rgba(0,0,0,0.8) 0%, rgba(9,10,70,0.6) 100%)'
+                  }} />
+                  <Container className="h-100 d-flex align-items-end">
+                    <div className="text-white pb-5">
+                      <h1 className="mb-3 text-white display-4" style={{ fontWeight: '700' }}>{article.title}</h1>
+                      <p className="mb-4 text-white fs-5" style={{ 
+                        opacity: '0.95',
+                        fontWeight: '400',
+                        lineHeight: '1.6',
+                        maxWidth: '800px'
+                      }}>
+                        {article.description}
+                      </p>
+                      <Button 
+                        variant="outline-light" 
+                        size="lg"
+                        style={{ 
+                          borderRadius: '25px',
+                          borderWidth: '2px',
+                          fontWeight: '500'
+                        }}
+                      >
+                        Continue Reading →
+                      </Button>
+                    </div>
+                  </Container>
+                </div>
+              </Carousel.Item>
+            ))}
+          </Carousel>
         </Container>
       </section>
 

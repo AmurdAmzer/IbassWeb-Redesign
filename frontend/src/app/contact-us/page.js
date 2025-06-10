@@ -2,6 +2,7 @@
 
 import { Container, Row, Col, Card, Form, Button, Alert } from 'react-bootstrap'
 import { useState } from 'react'
+import emailjs from 'emailjs-com'
 
 export default function ContactUsPage() {
   const [formData, setFormData] = useState({
@@ -14,6 +15,9 @@ export default function ContactUsPage() {
     message: ''
   })
   const [showAlert, setShowAlert] = useState(false)
+  const [alertMessage, setAlertMessage] = useState('')
+  const [alertType, setAlertType] = useState('success')
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   const handleInputChange = (e) => {
     setFormData({
@@ -22,23 +26,53 @@ export default function ContactUsPage() {
     })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log('Form submitted:', formData)
-    setShowAlert(true)
-    setTimeout(() => setShowAlert(false), 5000)
+    setIsSubmitting(true)
     
-    // Reset form
-    setFormData({
-      firstName: '',
-      lastName: '',
-      email: '',
-      phone: '',
-      subject: '',
-      category: 'general',
-      message: ''
-    })
+    try {
+      // EmailJS configuration - REPLACE WITH ACTUAL IDs
+      // EmailJS configuration from environment variables
+      const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
+      const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
+      const userID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+  
+      const templateParams = {
+        from_name: `${formData.firstName} ${formData.lastName}`,
+        from_email: formData.email,
+        phone: formData.phone,
+        subject: formData.subject,
+        category: formData.category,
+        message: formData.message,
+        to_name: 'Ibadur Rahman Academy',
+      }
+  
+      const response = await emailjs.send(serviceID, templateID, templateParams, userID)
+      
+      if (response.status === 200) {
+        setAlertType('success')
+        setAlertMessage('Message sent successfully! We will get back to you within 24-48 hours.')
+        setShowAlert(true)
+        
+        // Reset form
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          phone: '',
+          subject: '',
+          category: 'general',
+          message: ''
+        })
+      }
+    } catch (error) {
+      setAlertType('danger')
+      setAlertMessage('Failed to send message. Please try again or contact us directly.')
+      setShowAlert(true)
+    } finally {
+      setIsSubmitting(false)
+      setTimeout(() => setShowAlert(false), 5000)
+    }
   }
 
   const contactInfo = [
@@ -91,7 +125,7 @@ export default function ContactUsPage() {
       </section>
 
       {/* Main Contact Section */}
-      <section className="py-5" style={{backgroundColor: '#e9ecef'}}>
+      <section className="py-5 bg-light">
         <Container>
           <Row>
             {/* Contact Information */}
@@ -145,8 +179,8 @@ export default function ContactUsPage() {
               <h3 className="mb-4" style={{ color: 'var(--school-blue)' }}>Get In Touch</h3>
               
               {showAlert && (
-                <Alert variant="success" className="mb-4">
-                  <strong>Message sent successfully!</strong> We&apos;ll get back to you within 24-48 hours.
+                <Alert variant={alertType} className="mb-4">
+                  <strong>{alertType === 'success' ? 'Success!' : 'Error!'}</strong> {alertMessage}
                 </Alert>
               )}
 
@@ -253,13 +287,14 @@ export default function ContactUsPage() {
                       type="submit"
                       size="lg"
                       className="w-100"
+                      disabled={isSubmitting}
                       style={{
                         backgroundColor: 'var(--school-blue)',
                         border: 'none',
                         borderRadius: '25px'
                       }}
                     >
-                      Send Message
+                      {isSubmitting ? 'Sending...' : 'Send Message'}
                     </Button>
                   </Form>
                 </Card.Body>
