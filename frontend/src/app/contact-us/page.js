@@ -125,7 +125,7 @@ export default function ContactUsPage() {
       </section>
 
       {/* Main Contact Section */}
-      <section className="py-5 bg-light">
+      <section className="py-5 bg-light" style={{backgroundColor: '#e9ecef'}}>
         <Container>
           <Row>
             {/* Contact Information */}
