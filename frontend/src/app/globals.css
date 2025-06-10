@@ -157,3 +157,11 @@ section {
     font-size: 0.85rem !important;
   }
 }
+/* Footer link colors */
+footer a {
+  color: rgba(255,255,255,0.7) !important;
+}
+
+footer a:hover {
+  color: white !important;
+}
