@@ -36,7 +36,7 @@ export default function Footer() {
                 </span>
               </div>
               <p className="text-white-50 mb-4" style={{ lineHeight: '1.6' }}>
-                Providing quality education that combines traditional values with modern academic excellence to shape tomorrow's leaders.
+                Providing quality education that combines traditional values with modern academic excellence to shape tomorrow&apos;s leaders.
               </p>
               
               {/* Contact Info */}
