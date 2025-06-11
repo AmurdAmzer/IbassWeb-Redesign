@@ -12,6 +12,7 @@ import logo from '/public/images/logo.png' // static import
 export default function Header() {
   const pathname = usePathname()
   const [expanded, setExpanded] = useState(false)
+  const [isSearchFocused, setIsSearchFocused] = useState(false);
   
   const navItems = [
     { label: 'Home', href: '/' },
@@ -45,39 +46,39 @@ export default function Header() {
           IBADUR RAHMAN ACADEMY </span>
         </Navbar.Brand>
         
-        <Navbar.Toggle aria-controls='basic-navbar-nav' />
+        {/* Mobile menu toggle - hidden when search is focused */}
+        {!isSearchFocused && (
+          <Navbar.Toggle aria-controls='basic-navbar-nav' />
+        )}
         
         <Navbar.Collapse id='basic-navbar-nav'>
-          <Nav className="ms-auto">
-            {navItems.map((item) => (
-              <Nav.Link
-                key={item.label}
-                as={Link}
-                href={item.href}
-                className="nav-link-responsive"
-                onClick={() => setExpanded(false)}
-                style={{
-                  color: '#090A46',
-                  fontWeight: '500',
-                  textDecoration: pathname === item.href ? 'underline' : 'none',
-                  textUnderlineOffset: '5px'
-                }}
-              >
-                {item.label}
-              </Nav.Link>
-            ))}
+          {/* Nav items - hidden when search is focused on mobile */}
+          {!isSearchFocused && (
+            <Nav className="ms-auto">
+              {navItems.map((item) => (
+                <Nav.Link
+                  key={item.label}
+                  as={Link}
+                  href={item.href}
+                  className="nav-link-responsive"
+                  onClick={() => setExpanded(false)}
+                  style={{
+                    color: '#090A46',
+                    fontWeight: '500',
+                    textDecoration: pathname === item.href ? 'underline' : 'none',
+                    textUnderlineOffset: '5px'
+                  }}
+                >
+                  {item.label}
+                </Nav.Link>
+              ))}
+            </Nav>
+          )}
 
-            {/* Search Bar - Hidden on mobile, shown on desktop */}
-            <div className="d-none d-lg-block ms-3">
-              <SearchBar />
-            </div>
-          </Nav>
-
-          {/* Mobile Search - Shown on mobile only */}
-          <div className="d-lg-none mt-3 px-3">
-            <SearchBar />
+          {/* Search Bar - Always visible */}
+          <div className={isSearchFocused ? "ms-auto w-100" : "ms-3"}>
+            <SearchBar onSearchFocus={setIsSearchFocused} />
           </div>
-
         </Navbar.Collapse>
       </Container>
     </Navbar>

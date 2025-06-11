@@ -5,13 +5,13 @@ import { useState, useEffect } from 'react'
 import { Form, Button, Dropdown, Card } from 'react-bootstrap'
 import { useRouter } from 'next/navigation'
 
-export default function SearchBar() {
+export default function SearchBar({ onSearchFocus }) {
   const [searchTerm, setSearchTerm] = useState('')
   const [searchResults, setSearchResults] = useState([])
   const [showResults, setShowResults] = useState(false)
   const [isExpanded, setIsExpanded] = useState(false)
+  const [isFocused, setIsFocused] = useState(false);
   const router = useRouter()
-
 
   // Putting searchbar in view on mobile/smaller devices
 
@@ -161,9 +161,15 @@ export default function SearchBar() {
             placeholder="Search..."
             value={searchTerm}
             onChange={handleSearchChange}
-            onFocus={handleFocus}
-            size="sm"
-            className="search-input"
+            onFocus={(e) => {
+                setIsFocused(true);
+                onSearchFocus?.(true); // Notify parent
+                handleFocus(e);
+              }}
+              onBlur={() => {
+                setIsFocused(false);
+                onSearchFocus?.(false); // Notify parent
+              }}
             style={{ 
               borderRadius: '20px',
               border: '2px solid var(--school-blue)',
