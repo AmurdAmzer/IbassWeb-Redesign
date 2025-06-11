@@ -117,6 +117,8 @@ export default function SearchBar({ onSearchFocus }) {
     router.push(url)
     setShowResults(false)
     setSearchTerm('')
+    setIsExpanded(false)
+    onSearchFocus?.(false)
   }
 
   // Close results when clicking outside
@@ -126,6 +128,7 @@ export default function SearchBar({ onSearchFocus }) {
         setShowResults(false)
         setIsExpanded(false)
         setSearchTerm('')
+        onSearchFocus?.(false)
       }
     }
 
@@ -178,7 +181,8 @@ export default function SearchBar({ onSearchFocus }) {
               border: '2px solid var(--school-blue)',
               opacity: isExpanded ? 1 : 0,
               transition: 'opacity 0.3s ease',
-              fontSize: '16px'
+              fontSize: '16px',
+              boxShadow: 'none'
             }}
           />
         </Form>
