@@ -63,30 +63,31 @@ export default function Hero() {
             style={{ fontSize: 'clamp(1rem, 3.5vw, 1.4rem)', lineHeight: '1.6' }}>
               Integrity, Belief, Accountability, Discipline, Unity of purpose and Responsibility are our Core Values.
           </p>
-          <Link href="/contact-us">
+          <Link href="/contact-us" style={{ textDecoration: 'none' }}>
             <button 
-              className="btn btn-lg px-5 py-3"
+              className="btn btn-lg px-5 py-3 position-relative"
               style={{
-                backgroundColor: 'transparent',
-                color: 'white',
-                border: '2px solid white',
-                borderRadius: '5px',
+                backgroundColor: 'white',
+                color: '#090A46',
+                border: 'none',
+                borderRadius: '50px',
                 fontSize: '1.2rem',
-                transition: 'all 0.3s ease',  // Add this
-                cursor: 'pointer'             // Add this
-              }}
-              onMouseEnter={(e) => {
-                e.target.style.backgroundColor = 'white';
-                e.target.style.color = '#090A46';  // Your school blue color
-                e.target.style.transform = 'translateY(-2px)';
-              }}
-              onMouseLeave={(e) => {
-                e.target.style.backgroundColor = 'transparent';
-                e.target.style.color = 'white';
-                e.target.style.transform = 'translateY(0)';
+                fontWeight: '600',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer',
+                boxShadow: '0 6px 20px rgba(0, 0, 0, 0.3)',
+                // Pulse animation for mobile visibility
+                animation: 'pulse 2s infinite'
               }}
             >
               Reach Out
+              <span style={{
+                position: 'absolute',
+                top: '50%',
+                right: '25px',
+                transform: 'translateY(-50%)',
+                fontSize: '1.4rem'
+              }}>→</span>
             </button>
           </Link>
         </div>
