@@ -12,7 +12,28 @@ export default function SearchBar() {
   const [isExpanded, setIsExpanded] = useState(false)
   const router = useRouter()
 
-  // Sample searchable content - replace with your actual content
+
+  // Putting searchbar in view on mobile/smaller devices
+
+  const handleFocus = (e) => {
+    // Wait for keyboard to appear
+    setTimeout(() => {
+      // Get the input element position
+      const element = e.target;
+      const rect = element.getBoundingClientRect();
+      
+      // If element is in top half of screen, no need to adjust
+      if (rect.top < window.innerHeight / 2) return;
+      
+      // Otherwise, scroll to put it at top of viewport
+      window.scrollTo({
+        top: window.pageYOffset + rect.top - 100, // 100px from top
+        behavior: 'smooth'
+      });
+    }, 300);
+  };
+
+  // Sample searchable content - replace with actual content
   const searchableContent = [
     // Pages
     { title: 'About Us', type: 'page', url: '/about-us', description: 'Learn about our school history and mission' },
@@ -70,8 +91,6 @@ export default function SearchBar() {
       // Focus the input when expanding
       setTimeout(() => {
         document.querySelector('.search-input')?.focus()
-        input?.focus()
-        input?.scrollIntoView({ behavior: 'smooth', block: 'center' })
       }, 100)
     } else {
       // Clear search when collapsing
@@ -139,13 +158,15 @@ export default function SearchBar() {
             placeholder="Search..."
             value={searchTerm}
             onChange={handleSearchChange}
+            onFocus={handleFocus}
             size="sm"
             className="search-input"
             style={{ 
               borderRadius: '20px',
               border: '2px solid var(--school-blue)',
               opacity: isExpanded ? 1 : 0,
-              transition: 'opacity 0.3s ease'
+              transition: 'opacity 0.3s ease',
+              fontSize: '16px'
             }}
           />
         </Form>
