@@ -100,6 +100,7 @@ export default function SearchBar({ onSearchFocus }) {
       setSearchTerm('')
       setSearchResults([])
       setShowResults(false)
+      onSearchFocus?.(false);
     }
   }
   const handleSearchSubmit = (e) => {
@@ -166,10 +167,12 @@ export default function SearchBar({ onSearchFocus }) {
                 onSearchFocus?.(true); // Notify parent
                 handleFocus(e);
               }}
-              onBlur={() => {
-                setIsFocused(false);
-                onSearchFocus?.(false); // Notify parent
+            onBlur={() => {
+            setIsFocused(false);
+            onSearchFocus?.(false); // Notify parent
               }}
+            size="sm"
+            className="search-input"
             style={{ 
               borderRadius: '20px',
               border: '2px solid var(--school-blue)',
