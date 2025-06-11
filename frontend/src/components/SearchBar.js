@@ -243,7 +243,7 @@ export default function SearchBar() {
           }}
         >
           <Card.Body className="text-center p-3">
-            <p className="text-muted mb-0">No results found for "{searchTerm}"</p>
+          <p className="text-muted mb-0">No results found for &quot;{searchTerm}&quot;</p>
             <small className="text-muted">Try searching for staff, departments, or school information</small>
           </Card.Body>
         </Card>
