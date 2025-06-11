@@ -3,11 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "npm run build-search && next dev",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "build-search": "node scripts/generateSearchIndex.js",
-    "build": "npm run build-search && next build"
+    "lint": "next lint"
   },
   "dependencies": {
     "bootstrap": "^5.3.6",

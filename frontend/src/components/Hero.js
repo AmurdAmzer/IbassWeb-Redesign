@@ -1,5 +1,6 @@
 // components/Hero.js
 import { Container, Carousel } from 'react-bootstrap'
+import Link from 'next/link'
 
 export default function Hero() {
   const slides = [
@@ -62,18 +63,32 @@ export default function Hero() {
             style={{ fontSize: 'clamp(1rem, 3.5vw, 1.4rem)', lineHeight: '1.6' }}>
               Integrity, Belief, Accountability, Discipline, Unity of purpose and Responsibility are our Core Values.
           </p>
-          <button 
-            className="btn btn-lg px-5 py-3"
-            style={{
-              backgroundColor: 'transparent',
-              color: 'white',
-              border: '2px solid white',
-              borderRadius: '5px',
-              fontSize: '1.2rem'
-            }}
-          >
-            Reach Out
-          </button>
+          <Link href="/contact-us">
+            <button 
+              className="btn btn-lg px-5 py-3"
+              style={{
+                backgroundColor: 'transparent',
+                color: 'white',
+                border: '2px solid white',
+                borderRadius: '5px',
+                fontSize: '1.2rem',
+                transition: 'all 0.3s ease',  // Add this
+                cursor: 'pointer'             // Add this
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.backgroundColor = 'white';
+                e.target.style.color = '#090A46';  // Your school blue color
+                e.target.style.transform = 'translateY(-2px)';
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.backgroundColor = 'transparent';
+                e.target.style.color = 'white';
+                e.target.style.transform = 'translateY(0)';
+              }}
+            >
+              Reach Out
+            </button>
+          </Link>
         </div>
       </Container>
     </section>
