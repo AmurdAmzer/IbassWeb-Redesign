@@ -16,21 +16,24 @@ export default function SearchBar() {
   // Putting searchbar in view on mobile/smaller devices
 
   const handleFocus = (e) => {
-    // Wait for keyboard to appear
-    setTimeout(() => {
-      // Get the input element position
-      const element = e.target;
-      const rect = element.getBoundingClientRect();
-      
-      // If element is in top half of screen, no need to adjust
-      if (rect.top < window.innerHeight / 2) return;
-      
-      // Otherwise, scroll to put it at top of viewport
-      window.scrollTo({
-        top: window.pageYOffset + rect.top - 100, // 100px from top
-        behavior: 'smooth'
-      });
-    }, 300);
+    // For mobile devices
+    if (window.innerWidth <= 768) {
+      setTimeout(() => {
+        // Get the header/navbar element that contains the search
+        const header = e.target.closest('header') || e.target.closest('nav') || e.target.closest('.navbar');
+        
+        if (header) {
+          // Scroll the header to the top of the viewport
+          header.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          // Fallback: scroll the search input itself
+          e.target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        
+        // Additional scroll to ensure visibility
+        window.scrollBy(0, -50);
+      }, 400); // Increased delay for keyboard animation
+    }
   };
 
   // Sample searchable content - replace with actual content
