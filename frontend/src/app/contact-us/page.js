@@ -113,7 +113,7 @@ export default function ContactUsPage() {
   return (
     <>
       {/* Contact Header */}
-      <section className="py-5">
+      <section className="py-5" style={{backgroundColor: '#e9ecef'}}>
         <Container>
           <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>
             Contact Us
@@ -125,7 +125,7 @@ export default function ContactUsPage() {
       </section>
 
       {/* Main Contact Section */}
-      <section className="py-5" style={{backgroundColor: '#e9ecef'}}>
+      <section className="py-5 bg-light">
         <Container>
           <Row>
             {/* Contact Information */}
@@ -305,7 +305,7 @@ export default function ContactUsPage() {
       </section>
 
       {/* Office Hours & Map Section */}
-      <section className="py-5">
+      <section className="py-5" style={{backgroundColor: '#e9ecef'}}>
         <Container>
           <Row>
             {/* Office Hours */}

@@ -91,7 +91,7 @@ export default function GalleryPage() {
   return (
     <>
       {/* Gallery Header */}
-      <section className="py-5">
+      <section className="py-5" style={{backgroundColor: '#e9ecef'}}>
         <Container>
           <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>
             School Gallery
@@ -103,7 +103,7 @@ export default function GalleryPage() {
       </section>
 
       {/* Filter Section */}
-      <section className="py-4" style={{backgroundColor: '#e9ecef'}}>
+      <section className="py-4 bg-light" >
         <Container>
           <Row className="justify-content-center">
             <Col lg={10}>
