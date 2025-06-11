@@ -165,3 +165,14 @@ footer a {
 footer a:hover {
   color: white !important;
 }
+
+.search-input:focus {
+  position: relative;
+  z-index: 9999;
+}
+
+/* Ensure the search container stays visible */
+.search-container:has(.search-input:focus) {
+  position: relative;
+  z-index: 9999;
+}
