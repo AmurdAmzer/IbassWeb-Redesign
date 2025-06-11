@@ -70,6 +70,8 @@ export default function SearchBar() {
       // Focus the input when expanding
       setTimeout(() => {
         document.querySelector('.search-input')?.focus()
+        input?.focus()
+        input?.scrollIntoView({ behavior: 'smooth', block: 'center' })
       }, 100)
     } else {
       // Clear search when collapsing
