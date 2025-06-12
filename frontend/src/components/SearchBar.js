@@ -174,20 +174,22 @@ export default function SearchBar({ onSearchFocus, onNavigate }) {
                 onSearchFocus?.(true); // Notify parent
                 handleFocus(e);
               }}
-            onBlur={() => {
-            setIsFocused(false);
-            onSearchFocus?.(false); // Notify parent
+              onBlur={() => {
+                setTimeout(() => {
+                  setIsFocused(false);
+                  onSearchFocus?.(false); // Notify parent
+                }, 500);
               }}
-            size="sm"
-            className="search-input"
-            style={{ 
-              borderRadius: '20px',
-              border: '2px solid var(--school-blue)',
-              opacity: isExpanded ? 1 : 0,
-              transition: 'opacity 0.3s ease',
-              fontSize: '16px',
-              boxShadow: 'none'
-            }}
+              size="sm"
+              className="search-input"
+              style={{ 
+                borderRadius: '20px',
+                border: '2px solid var(--school-blue)',
+                opacity: isExpanded ? 1 : 0,
+                transition: 'opacity 0.3s ease',
+                fontSize: '16px',
+                boxShadow: 'none'
+              }}
           />
         </Form>
         
