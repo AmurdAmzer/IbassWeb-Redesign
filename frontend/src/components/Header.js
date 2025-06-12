@@ -81,7 +81,17 @@ export default function Header() {
           <div className={isSearchFocused ? "ms-auto w-100" : "ms-3"}>
             <SearchBar 
             onSearchFocus={setIsSearchFocused}
-            onNavigate={() => setExpanded(false)} 
+            onNavigate={() => {
+              setExpanded(false);
+              // Force the navbar to close on mobile
+              setTimeout(() => {
+                const navbarToggler = document.querySelector('.navbar-toggler');
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+                  navbarToggler?.click();
+                }
+              }, 300);
+            }}  
             />
           </div>
         </Navbar.Collapse>
