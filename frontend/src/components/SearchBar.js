@@ -134,7 +134,7 @@ export default function SearchBar({ onSearchFocus }) {
 
     document.addEventListener('click', handleClickOutside)
     return () => document.removeEventListener('click', handleClickOutside)
-  }, [])
+  }, [onSearchFocus])
 
   // Get type icon - REMOVED
   // const getTypeIcon = (type) => {
