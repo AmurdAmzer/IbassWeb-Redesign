@@ -77,7 +77,10 @@ export default function Header() {
 
           {/* Search Bar - Always visible */}
           <div className={isSearchFocused ? "ms-auto w-100" : "ms-3"}>
-            <SearchBar onSearchFocus={setIsSearchFocused} />
+            <SearchBar 
+            onSearchFocus={setIsSearchFocused}
+            onNavigate={() => setExpanded(false)} 
+            />
           </div>
         </Navbar.Collapse>
       </Container>

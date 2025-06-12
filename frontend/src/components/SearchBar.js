@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 import { Form, Button, Dropdown, Card } from 'react-bootstrap'
 import { useRouter } from 'next/navigation'
 
-export default function SearchBar({ onSearchFocus }) {
+export default function SearchBar({ onSearchFocus, onNavigate }) {
   const [searchTerm, setSearchTerm] = useState('')
   const [searchResults, setSearchResults] = useState([])
   const [showResults, setShowResults] = useState(false)
@@ -109,6 +109,9 @@ export default function SearchBar({ onSearchFocus }) {
       router.push(searchResults[0].url)
       setShowResults(false)
       setSearchTerm('')
+      setIsExpanded(false)
+      onSearchFocus?.(false)
+      onNavigate?.()
     }
   }
 
@@ -119,6 +122,7 @@ export default function SearchBar({ onSearchFocus }) {
     setSearchTerm('')
     setIsExpanded(false)
     onSearchFocus?.(false)
+    onNavigate?.()
   }
 
   // Close results when clicking outside
