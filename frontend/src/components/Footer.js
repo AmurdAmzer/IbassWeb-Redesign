@@ -1,19 +1,20 @@
 'use client'
 
 import { Container, Row, Col } from 'react-bootstrap'
-import Image from 'next/image'
 import logo from '/public/images/logo.png'
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Footer() {
   const pageLinks = [
-    'Home',
-    'About Us',
-    'Academic',
-    'Staff',
-    'Students',
-    'Gallery',
-    'Contact Us',
-    'Admissions'
+    { name: 'Home', url: '/' },
+    { name: 'About Us', url: '/about-us' },
+    { name: 'Academic', url: '/academic' },
+    { name: 'Staff', url: '/staff' },
+    { name: 'Students', url: '/students' },
+    { name: 'Gallery', url: '/gallery' },
+    { name: 'Contact Us', url: '/contact-us' },
+    { name: 'Admissions', url: '/contact-us' }
   ]
 
   return (
@@ -71,16 +72,16 @@ export default function Footer() {
               <h5 className="mb-3 text-white">Page Links</h5>
               <div className="d-flex flex-column">
                 {pageLinks.map((link, index) => (
-                  <a 
+                  <Link
                     key={index} 
-                    href="#" 
+                    href={link.url}
                     className="text-white-50 text-decoration-none mb-2 hover-link"
                     style={{ transition: 'color 0.3s ease' }}
                     onMouseEnter={(e) => e.target.style.color = 'white'}
                     onMouseLeave={(e) => e.target.style.color = 'rgba(255,255,255,0.5)'}
                   >
-                    {link}
-                  </a>
+                    {link.name}
+                  </Link>
                 ))}
               </div>
             </Col>
