@@ -5,7 +5,7 @@ import { Container, Navbar, Nav } from 'react-bootstrap'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import SearchBar from './SearchBar'
 import logo from '/public/images/logo.png' // static import
 
@@ -13,6 +13,7 @@ export default function Header() {
   const pathname = usePathname()
   const [expanded, setExpanded] = useState(false)
   const [isSearchFocused, setIsSearchFocused] = useState(false);
+  const navbarRef = useRef(null);
   
   const navItems = [
     { label: 'Home', href: '/' },
@@ -26,6 +27,7 @@ export default function Header() {
 
   return (
     <Navbar 
+    ref={navbarRef}
     bg="white" 
     expand="lg" 
     className="py-3 shadow-sm" 
