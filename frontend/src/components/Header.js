@@ -46,21 +46,20 @@ export default function Header() {
           IBADUR RAHMAN ACADEMY </span>
         </Navbar.Brand>
         
-        {/* Mobile menu toggle - hidden when search is focused */}
+        {/* Mobile menu toggle - hidden when search is focused on obile only */}
         {!isSearchFocused && (
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
         )}
         
         <Navbar.Collapse id='basic-navbar-nav'>
           {/* Nav items - hidden when search is focused on mobile */}
-          {!isSearchFocused && (
             <Nav className="ms-auto">
               {navItems.map((item) => (
                 <Nav.Link
                   key={item.label}
                   as={Link}
                   href={item.href}
-                  className="nav-link-responsive"
+                  className={`nav-link-responsive ${isSearchFocused ? 'd-none d-lg-block' : ''}`}
                   onClick={() => setExpanded(false)}
                   style={{
                     color: '#090A46',
@@ -73,10 +72,9 @@ export default function Header() {
                 </Nav.Link>
               ))}
             </Nav>
-          )}
 
           {/* Search Bar - Always visible */}
-          <div className={isSearchFocused ? "ms-auto w-100" : "ms-3"}>
+          <div className={isSearchFocused ? "ms-auto w-100 w-lg-auto ms-lg-3" : "ms-3"}>
             <SearchBar 
             onSearchFocus={setIsSearchFocused}
             onNavigate={() => setExpanded(false)} 
