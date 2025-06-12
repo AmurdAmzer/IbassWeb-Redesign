@@ -10,7 +10,6 @@ export default function SearchBar({ onSearchFocus, onNavigate }) {
   const [searchResults, setSearchResults] = useState([])
   const [showResults, setShowResults] = useState(false)
   const [isExpanded, setIsExpanded] = useState(false)
-  const [isFocused, setIsFocused] = useState(false);
   const router = useRouter()
 
   // Putting searchbar in view on mobile/smaller devices
@@ -121,7 +120,6 @@ export default function SearchBar({ onSearchFocus, onNavigate }) {
     setShowResults(false)
     setSearchTerm('')
     setIsExpanded(false)
-    onSearchFocus?.(false)
     onNavigate?.()
   }
 
@@ -170,13 +168,11 @@ export default function SearchBar({ onSearchFocus, onNavigate }) {
             value={searchTerm}
             onChange={handleSearchChange}
             onFocus={(e) => {
-                setIsFocused(true);
                 onSearchFocus?.(true); // Notify parent
                 handleFocus(e);
               }}
               onBlur={() => {
                 setTimeout(() => {
-                  setIsFocused(false);
                   onSearchFocus?.(false); // Notify parent
                 }, 500);
               }}

@@ -5,7 +5,7 @@ import { Container, Navbar, Nav } from 'react-bootstrap'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
-import { useState, useRef } from 'react'
+import { useState } from 'react'
 import SearchBar from './SearchBar'
 import logo from '/public/images/logo.png' // static import
 
@@ -13,7 +13,6 @@ export default function Header() {
   const pathname = usePathname()
   const [expanded, setExpanded] = useState(false)
   const [isSearchFocused, setIsSearchFocused] = useState(false);
-  const navbarRef = useRef(null);
   
   const navItems = [
     { label: 'Home', href: '/' },
@@ -26,8 +25,7 @@ export default function Header() {
   ]
 
   return (
-    <Navbar 
-    ref={navbarRef}
+    <Navbar
     bg="white" 
     expand="lg" 
     className="py-3 shadow-sm" 
@@ -81,17 +79,7 @@ export default function Header() {
           <div className={isSearchFocused ? "ms-auto w-100" : "ms-3"}>
             <SearchBar 
             onSearchFocus={setIsSearchFocused}
-            onNavigate={() => {
-              setExpanded(false);
-              // Force the navbar to close on mobile
-              setTimeout(() => {
-                const navbarToggler = document.querySelector('.navbar-toggler');
-                const navbarCollapse = document.querySelector('.navbar-collapse');
-                if (navbarCollapse && navbarCollapse.classList.contains('show')) {
-                  navbarToggler?.click();
-                }
-              }, 300);
-            }}  
+            onNavigate={() => setExpanded(false)} 
             />
           </div>
         </Navbar.Collapse>
