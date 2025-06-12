@@ -13,8 +13,7 @@ export default function Footer() {
     { name: 'Staff', url: '/staff' },
     { name: 'Students', url: '/students' },
     { name: 'Gallery', url: '/gallery' },
-    { name: 'Contact Us', url: '/contact-us' },
-    { name: 'Admissions', url: '/contact-us' }
+    { name: 'Contact Us', url: '/contact-us' }
   ]
 
   return (
