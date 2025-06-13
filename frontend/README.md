@@ -34,7 +34,7 @@ Ibadur Rahman Academy's official website serves as a comprehensive digital platf
 - 📱 **Fully Responsive Design** - Works seamlessly on all devices
 - 🎨 **Modern UI/UX** - Clean and professional interface
 - 🎠 **Interactive Carousels** - Hero section and news carousel with smooth transitions
-- 📑 **8 Core Pages** - Home, About, Academic, Staff, Students, Gallery, Contact, Login
+- 📑 **7 Core Pages** - Home, About, Academic, Staff, Students, Gallery, Contact
 - 🎯 **Navigation Menu** - Sticky header with active page indicators
 - 📰 **News Section** - Latest updates and announcements
 - 👥 **Leadership Profiles** - Staff information and photos
