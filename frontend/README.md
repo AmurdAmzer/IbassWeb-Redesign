@@ -201,9 +201,8 @@ Runs the linter to check for code quality issues.
 - Office hours
 - Communication channels
 
-### Login (`/login`)
-- Placeholder for future portal access
-- Coming soon message
+### Search (`/searchBar`)
+- Search Bar
 
 ## 🧩 Components
 
@@ -221,8 +220,8 @@ Runs the linter to check for code quality issues.
 
 ### Footer Component
 - Contact information
-- Quick links in columns
-- Social media links (placeholder)
+- Page links in columns
+- Addresses and Map
 - Copyright section with dark background
 
 ## 🌐 Deployment
