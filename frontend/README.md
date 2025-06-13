@@ -82,8 +82,6 @@ Ibadur Rahman Academy's official website serves as a comprehensive digital platf
 3. **Install dependencies**
    ```bash
    npm install
-   # or
-   yarn install
    ```
 
 4. **Set up environment variables**
@@ -100,8 +98,6 @@ Ibadur Rahman Academy's official website serves as a comprehensive digital platf
 5. **Run the development server**
    ```bash
    npm run dev
-   # or
-   yarn dev
    ```
 
 6. **Open your browser**
@@ -127,23 +123,22 @@ ibadur-rahman-academy/
 │   │   ├── gallery/
 │   │   │   └── page.js        # Photo gallery
 │   │   ├── contact/
-│   │   │   └── page.js        # Contact page
-│   │   └── login/
-│   │       └── page.js        # Login page (placeholder)
+│   │      └── page.js        # Contact page
+│   │   
 │   │
 │   ├── components/
 │   │   ├── Header.js          # Navigation header
 │   │   ├── Hero.js            # Hero carousel section
 │   │   └── Footer.js          # Site footer
-│   │
+        └── SearchBar.js       # SearchBar
+│   │   
 │   ├── public/
 │   │   └── images/            # Static images
 │   │
 │   ├── package.json
 │   └── next.config.js
 │
-├── backend/                   # Reserved for future API development
-│   └── README.md
+├
 │
 └── README.md                  # This file
 ```
