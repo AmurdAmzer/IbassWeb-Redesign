@@ -178,27 +178,22 @@ Runs the linter to check for code quality issues.
 - School Anthem
 
 ### Academic (`/academic`)
-- Program offerings (Science, Arts, Visual Arts, Home Economics)
+- Program offerings (General Science, General Arts, Visual Arts, Home Economics)
 - Curriculum overview
-- Admission requirements
 - Academic calendar
 
 ### Staff (`/staff`)
 - Management team profiles
 - Teaching staff directory
-- Support staff listing
+- Support/Non-Teaching staff listing
 
 ### Students (`/students`)
-- Student life overview
-- Clubs and societies
+- Students Representative Council (SRC)
 - Student leadership (prefects)
-- Extracurricular activities
 
 ### Gallery (`/gallery`)
 - Photo collections
-- Event highlights
-- Campus facilities
-- Student activities
+- Video collections
 
 ### Contact (`/contact`)
 - Contact form
