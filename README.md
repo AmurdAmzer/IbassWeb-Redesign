@@ -106,7 +106,7 @@ Ibadur Rahman Academy's official website serves as a comprehensive digital platf
 ## 📁 Project Structure
 
 ```
-ibadur-rahman-academy/
+IbassWeb-Redesign/
 ├── frontend/
 │   ├── app/
 │   │   ├── layout.js          # Root layout with header/footer
