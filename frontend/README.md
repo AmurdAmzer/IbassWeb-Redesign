@@ -20,13 +20,12 @@ A modern, responsive website for Ibadur Rahman Academy built with Next.js 14 and
 
 ## 🏫 About
 
-Ibadur Rahman Academy's official website serves as a comprehensive digital platform for students, parents, and prospective families. The website showcases the academy's commitment to excellence in Islamic and academic education, providing easy access to information about programs, events, and school activities.
+Ibadur Rahman Academy's official website serves as a comprehensive digital platform for students, parents, and prospective families. The website showcases the academy's commitment to excellence in  education, providing easy access to information about programs, events, and school activities.
 
 ### 🎯 Key Objectives
 
 - Provide essential school information to stakeholders
 - Enable easy content management for school staff
-- Establish foundation for future interactive features (student/parent portals)
 - Ensure fast loading and mobile-friendly experience
 
 ## ✨ Features
