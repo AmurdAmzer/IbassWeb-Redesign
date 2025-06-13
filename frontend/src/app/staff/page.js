@@ -87,7 +87,7 @@ export default function StaffPage() {
     return (
         <>
           {/* Staff Overview Section */}
-          <section className="py-5" style={{backgroundColor: '#DEECFF'}}>
+          <section className="py-5" style={{backgroundColor: '#e9ecef'}}>
             <Container className="px-4 px-md-0">
               <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>Our Staff</h2>
               <p className="text-center text-muted mb-5 px-3">
@@ -134,7 +134,7 @@ export default function StaffPage() {
           </section>
 
           {/* Teaching Staff Section */}
-          <section className="py-5" style={{backgroundColor: '#e9ecef'}}>
+          <section className="py-5">
             <Container className="px-4 px-md-0">
               <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>Teaching Staff</h2>
               <p className="text-center text-muted mb-5 px-3">
@@ -171,7 +171,7 @@ export default function StaffPage() {
           </section>
 
           {/* Non-Teaching Staff Section */}
-          <section className="py-5">
+          <section className="py-5" style={{backgroundColor: '#e9ecef'}}>
             <Container className="px-4 px-md-0">
               <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>Non-Teaching Staff</h2>
               <p className="text-center text-muted mb-5 px-3">
