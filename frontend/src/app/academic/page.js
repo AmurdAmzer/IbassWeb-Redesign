@@ -37,7 +37,7 @@ export default function DepartmentPage() {
         </section>
 
         {/* General Arts Department */}
-        <section className="py-5" style={{backgroundColor: '#DEECFF'}}>
+        <section className="py-5 bg-light">
         <Container className="px-4 px-md-0">
             <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>General Arts Department</h2>
             <p className="text-center text-muted mb-5 px-3">
@@ -58,7 +58,7 @@ export default function DepartmentPage() {
         </section>
 
         {/* Visual Arts Department */}
-        <section className="py-5 bg-light">
+        <section className="py-5" style={{backgroundColor: '#DEECFF'}}>
         <Container className="px-4 px-md-0">
             <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>Visual Arts Department</h2>
             <p className="text-center text-muted mb-5 px-3">
