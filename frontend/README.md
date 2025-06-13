@@ -64,13 +64,13 @@ Ibadur Rahman Academy's official website serves as a comprehensive digital platf
 
 ### Prerequisites
 - Node.js 18.17 or later
-- npm or yarn package manager
+- npm package manager
 
 ### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/ibadur-rahman-academy.git
+   git clone https://github.com/amurdamzer/IbassWeb-Redesign.git
    cd ibadur-rahman-academy
    ```
 
