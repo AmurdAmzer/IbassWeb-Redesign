@@ -129,7 +129,7 @@ ibadur-rahman-academy/
 │   ├── components/
 │   │   ├── Header.js          # Navigation header
 │   │   ├── Hero.js            # Hero carousel section
-│   │   └── Footer.js          # Site footer
+│   │   |── Footer.js          # Site footer
         └── SearchBar.js       # SearchBar
 │   │   
 │   ├── public/
