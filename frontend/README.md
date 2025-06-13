@@ -2,7 +2,7 @@
 
 A modern, responsive website for Ibadur Rahman Academy built with Next.js 14 and React-Bootstrap.
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [About](#about)
 - [Features](#features)
@@ -18,33 +18,33 @@ A modern, responsive website for Ibadur Rahman Academy built with Next.js 14 and
 - [License](#license)
 - [Contact](#contact)
 
-## 🏫 About
+##  About
 
 Ibadur Rahman Academy's official website serves as a comprehensive digital platform for students, parents, and prospective families. The website showcases the academy's commitment to excellence in  education, providing easy access to information about programs, events, and school activities.
 
-### 🎯 Key Objectives
+###  Key Objectives
 
 - Provide essential school information to stakeholders
 - Enable easy content management for school staff
 - Ensure fast loading and mobile-friendly experience
 
-## ✨ Features
+##  Features
 
 ### Current Features (MVP)
-- 📱 **Fully Responsive Design** - Works seamlessly on all devices
-- 🎨 **Modern UI/UX** - Clean and professional interface
-- 🎠 **Interactive Carousels** - Hero section and news carousel with smooth transitions
-- 📑 **7 Core Pages** - Home, About, Academic, Staff, Students, Gallery, Contact
-- 🎯 **Navigation Menu** - Sticky header with active page indicators
-- 📰 **News Section** - Latest updates and announcements
-- 👥 **Leadership Profiles** - Leaders information and photos
-- 📞 **Contact Information** - Easy access to school details
+-  **Fully Responsive Design** - Works seamlessly on all devices
+-  **Modern UI/UX** - Clean and professional interface
+-  **Interactive Carousels** - Hero section and news carousel with smooth transitions
+-  **7 Core Pages** - Home, About, Academic, Staff, Students, Gallery, Contact
+-  **Navigation Menu** - Sticky header with active page indicators
+-  **News Section** - Latest updates and announcements
+-  **Leadership Profiles** - Leaders information and photos
+-  **Contact Information** - Easy access to school details
 
 ### Design Features
-- 🌈 **Custom Color Scheme** - Navy blue (#090A46) and deep blue (#030419)
-- 🎭 **Gradient Overlays** - Professional image overlays
-- ✨ **Smooth Animations** - Fade-in effects and transitions
-- 🎪 **Bootstrap Components** - Consistent and reliable UI elements
+-  **Custom Color Scheme** - Navy blue (#090A46) and deep blue (#030419)
+-  **Gradient Overlays** - Professional image overlays
+-  **Smooth Animations** - Fade-in effects and transitions
+-  **Bootstrap Components** - Consistent and reliable UI elements
 
 ## 🛠️ Tech Stack
 
@@ -174,8 +174,8 @@ Runs the linter to check for code quality issues.
 ### About Us (`/about`)
 - School history and background
 - Vision and mission statements
-- Core values
-- Achievements
+- Leaders
+- School Anthem
 
 ### Academic (`/academic`)
 - Program offerings (Science, Arts, Visual Arts, Home Economics)
