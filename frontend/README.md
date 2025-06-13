@@ -37,11 +37,11 @@ Ibadur Rahman Academy's official website serves as a comprehensive digital platf
 - 📑 **7 Core Pages** - Home, About, Academic, Staff, Students, Gallery, Contact
 - 🎯 **Navigation Menu** - Sticky header with active page indicators
 - 📰 **News Section** - Latest updates and announcements
-- 👥 **Leadership Profiles** - Staff information and photos
+- 👥 **Leadership Profiles** - Leaders information and photos
 - 📞 **Contact Information** - Easy access to school details
 
 ### Design Features
-- 🌈 **Custom Color Scheme** - Navy blue (#090A46) and gold (#FFD700)
+- 🌈 **Custom Color Scheme** - Navy blue (#090A46) and deep blue (#030419)
 - 🎭 **Gradient Overlays** - Professional image overlays
 - ✨ **Smooth Animations** - Fade-in effects and transitions
 - 🎪 **Bootstrap Components** - Consistent and reliable UI elements
