@@ -24,11 +24,11 @@ function GalleryContent() {
     {
       id: 1,
       type: 'image',
-      category: 'photo',
-      title: 'Science Laboratory Session',
-      description: 'Students conducting chemistry experiments in our modern laboratory',
-      thumbnail: '/images/scienceLab.jpeg',
-      fullSize: '/images/scienceLab.jpeg'
+      category: 'news',
+      title: 'SRC Week Celebration',
+      description: 'Welcome to Ibadur Rahman School, where we nurture curiosity and foster a love for learning. Join us in our mission to create a supportive environment that inspires students to achieve their full potential.',
+      thumbnail: '/images/news1.jpg',
+      fullSize: '/images/news1.jpg'
     },
     {
       id: 2,
@@ -40,7 +40,17 @@ function GalleryContent() {
       fullSize: '/images/news3.jpg'
     },
     {
-        id: 3,
+      id: 3,
+      type: 'image',
+      category: 'news',
+      title: 'Academic Excellence Awards 2025',
+      description: 'Celebrating outstanding academic achievements of our students. Join us as we recognize the hard work and dedication of our brilliant minds.',
+      thumbnail: '/images/news2.jpg',
+      videoUrl: '/images/news2.jpg'
+    },
+
+    {
+        id: 4,
         type: 'image',
         category: 'campus',
         title: 'SRC Week Celebration',
@@ -48,31 +58,24 @@ function GalleryContent() {
         thumbnail: '/images/src.png',
         fullSize: '/images/nsrc.png'
       },
-    {
-      id: 4,
-      type: 'video',
-      category: 'video',
-      title: 'Graduation Ceremony 2024',
-      description: 'Highlights from our graduation ceremony',
-      thumbnail: '/images/gallery/graduation-thumb.jpg',
-      videoUrl: '/videos/graduation-2024.mp4'
-    },
+
     {
       id: 5,
-      type: 'video',
-      category: 'video',
-      title: 'Graduation Ceremony 2024',
-      description: 'Highlights from our graduation ceremony',
-      thumbnail: '/images/gallery/graduation-thumb.jpg',
-      videoUrl: '/videos/graduation-2024.mp4'
+      type: 'image',
+      category: 'photo',
+      title: 'Science Laboratory Session',
+      description: 'Students conducting chemistry experiments in our modern laboratory',
+      thumbnail: '/images/scienceLab.jpeg',
+      fullSize: '/images/scienceLab.jpeg'
     },
+    
     {
       id: 6,
       type: 'video',
       category: 'video',
       title: 'Graduation Ceremony 2024',
       description: 'Highlights from our graduation ceremony',
-      thumbnail: '/images/gallery/graduation-thumb.jpg',
+      thumbnail: '/images/graduation-thumb.jpg',
       videoUrl: '/videos/graduation-2024.mp4'
     }
   ]
@@ -104,7 +107,7 @@ function GalleryContent() {
       <section className="py-5" style={{backgroundColor: '#e9ecef'}}>
         <Container>
           <h2 className="text-center mb-3" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '80% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>
-            School Gallery
+            News & Gallery
           </h2>
           <p className="text-center text-muted mb-5 px-3">
             Explore moments that capture the spirit of academic excellence, vibrant campus life, and memorable events at Ibadur Rahman Academy.
@@ -256,7 +259,7 @@ function GalleryContent() {
       </Modal>
     </>
   )
-  
+
 }
 
 export default function GalleryPage() {
