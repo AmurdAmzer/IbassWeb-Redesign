@@ -189,7 +189,7 @@ export default function Home() {
       {/* News and Articles Section - Carousel */}
       <section className="py-5" style={{backgroundColor: '#090A46'}}>
         <Container >
-          <h2 className="text-center mb-5 text-white" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '100% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>Galery and News</h2>
+          <h2 className="text-center mb-5 text-white" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '100% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>News & Gallery</h2>
           <Row>
             <Col lg={10} className="mx-auto">
               <Carousel indicators={true} controls={true} interval={5000}>
