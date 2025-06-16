@@ -1,19 +1,28 @@
 'use client'
 
 import { Container, Row, Col, Card, Button, Modal } from 'react-bootstrap'
-import { useState } from 'react'
+import { useSearchParams } from 'next/navigation'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 
+
 export default function GalleryPage() {
-  const [activeFilter, setActiveFilter] = useState('all')
+  const searchParams = useSearchParams()
+  const defaultFilter = searchParams.get('filter') || 'all'
+  const [activeFilter, setActiveFilter] = useState(defaultFilter)
   const [showModal, setShowModal] = useState(false)
   const [selectedMedia, setSelectedMedia] = useState(null)
+
+  useEffect(() => {
+    // This ensures that if user navigates (e.g. client-side) and filter changes, it updates
+    setActiveFilter(defaultFilter)
+  }, [defaultFilter])
 
   const galleryItems = [
     {
       id: 1,
       type: 'image',
-      category: 'academic',
+      category: 'photo',
       title: 'Science Laboratory Session',
       description: 'Students conducting chemistry experiments in our modern laboratory',
       thumbnail: '/images/scienceLab.jpeg',
@@ -22,7 +31,7 @@ export default function GalleryPage() {
     {
       id: 2,
       type: 'image',
-      category: 'sports',
+      category: 'news',
       title: 'Inter-House Football Match',
       description: 'Annual sports competition between school houses',
       thumbnail: '/images/news3.jpg',
@@ -40,7 +49,7 @@ export default function GalleryPage() {
     {
       id: 4,
       type: 'video',
-      category: 'events',
+      category: 'video',
       title: 'Graduation Ceremony 2024',
       description: 'Highlights from our graduation ceremony',
       thumbnail: '/images/gallery/graduation-thumb.jpg',
@@ -49,29 +58,28 @@ export default function GalleryPage() {
     {
       id: 5,
       type: 'video',
-      category: 'sports',
-      title: 'Athletics Day Highlights',
-      description: 'Best moments from our annual athletics competition',
-      thumbnail: '/images/gallery/athletics-thumb.jpg',
-      videoUrl: '/videos/athletics-2024.mp4'
+      category: 'video',
+      title: 'Graduation Ceremony 2024',
+      description: 'Highlights from our graduation ceremony',
+      thumbnail: '/images/gallery/graduation-thumb.jpg',
+      videoUrl: '/videos/graduation-2024.mp4'
     },
     {
-        id: 6,
-        type: 'video',
-        category: 'sports',
-        title: 'Athletics Day Highlights',
-        description: 'Best moments from our annual athletics competition',
-        thumbnail: '/images/gallery/athletics-thumb.jpg',
-        videoUrl: '/videos/athletics-2024.mp4'
-      }
+      id: 6,
+      type: 'video',
+      category: 'video',
+      title: 'Graduation Ceremony 2024',
+      description: 'Highlights from our graduation ceremony',
+      thumbnail: '/images/gallery/graduation-thumb.jpg',
+      videoUrl: '/videos/graduation-2024.mp4'
+    }
   ]
 
   const filterCategories = [
     { key: 'all', label: 'All'},
-    { key: 'academic', label: 'Academic Events'},
-    { key: 'sports', label: 'Sports & Athletics'},
-    { key: 'campus', label: 'Campus Life'},
-    { key: 'events', label: 'Special Events'}
+    { key: 'photo', label: 'Photos'},
+    { key: 'video', label: 'Videos'},
+    { key: 'news', label: 'News'}
   ]
 
   const filteredItems = activeFilter === 'all' 

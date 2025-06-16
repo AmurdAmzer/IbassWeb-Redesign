@@ -189,7 +189,7 @@ export default function Home() {
       {/* News and Articles Section - Carousel */}
       <section className="py-5" style={{backgroundColor: '#090A46'}}>
         <Container >
-          <h2 className="text-center mb-5 text-white" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '100% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>News and Articles</h2>
+          <h2 className="text-center mb-5 text-white" style={{background: 'linear-gradient(to right, transparent, var(--school-blue), transparent) no-repeat bottom', backgroundSize: '100% 3px', paddingBottom: '15px', width: 'fit-content', margin: '0 auto 1rem auto'}}>Galery and News</h2>
           <Row>
             <Col lg={10} className="mx-auto">
               <Carousel indicators={true} controls={true} interval={5000}>
@@ -206,9 +206,22 @@ export default function Home() {
                         <p className="text-muted">
                           {article.description}
                         </p>
-                        <Button variant="link" className="p-0" style={{ color: 'var(--school-blue)' }}>
-                          Learn More →
-                        </Button>
+                        <Link href="/gallery?filter=news">
+                          <Button variant="primary"
+                                  className="px-4 py-2 fw-bold shadow-sm"
+                                  style={{
+                                    backgroundColor: 'var(--school-blue)',
+                                    border: 'none',
+                                    borderRadius: '8px',
+                                    fontSize: '1rem',
+                                    transition: 'all 0.3s ease-in-out',
+                                  }}
+                                  onMouseEnter={(e) => (e.target.style.transform = 'scale(1.05)')}
+                                  onMouseLeave={(e) => (e.target.style.transform = 'scale(1)')}
+                                >
+                            Learn More →
+                          </Button>
+                        </Link>
                       </Card.Body>
                     </Card>
                   </Carousel.Item>
