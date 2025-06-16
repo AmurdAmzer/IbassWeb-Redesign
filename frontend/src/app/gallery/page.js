@@ -3,10 +3,12 @@
 import { Container, Row, Col, Card, Button, Modal } from 'react-bootstrap'
 import { useSearchParams } from 'next/navigation'
 import { useState, useEffect } from 'react'
+import { Suspense } from 'react'
 import Image from 'next/image'
 
 
-export default function GalleryPage() {
+
+function GalleryContent() {
   const searchParams = useSearchParams()
   const defaultFilter = searchParams.get('filter') || 'all'
   const [activeFilter, setActiveFilter] = useState(defaultFilter)
@@ -253,5 +255,14 @@ export default function GalleryPage() {
         </Modal.Body>
       </Modal>
     </>
+  )
+  
+}
+
+export default function GalleryPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <GalleryContent />
+    </Suspense>
   )
 }
