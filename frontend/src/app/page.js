@@ -219,7 +219,7 @@ export default function Home() {
                                   onMouseEnter={(e) => (e.target.style.transform = 'scale(1.05)')}
                                   onMouseLeave={(e) => (e.target.style.transform = 'scale(1)')}
                                 >
-                            Learn More →
+                            Read More →
                           </Button>
                         </Link>
                       </Card.Body>
