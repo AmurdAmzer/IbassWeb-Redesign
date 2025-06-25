@@ -176,3 +176,48 @@ footer a:hover {
   position: relative;
   z-index: 9999;
 }
+
+/* Mobile-only horizontal scroll */
+@media (max-width: 767px) {
+  .mobile-scroll-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 -15px; /* Extend to screen edges */
+    padding: 20px 0;
+  }
+
+  .mobile-scroll-wrapper {
+    display: flex;
+    gap: 15px;
+    padding: 0 15px;
+  }
+
+  .mobile-scroll-card {
+    flex: 0 0 280px;
+    transition: transform 0.3s ease;
+  }
+
+  /* Optional: Add scroll indicators */
+  .mobile-scroll-container::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .mobile-scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  .mobile-scroll-container::-webkit-scrollbar-thumb {
+    background: var(--school-blue);
+    border-radius: 2px;
+  }
+}
+
+/* Desktop keeps the hover effect */
+@media (min-width: 768px) {
+  .staff-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+}
