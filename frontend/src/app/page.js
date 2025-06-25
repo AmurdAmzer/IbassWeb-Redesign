@@ -3,6 +3,7 @@
 'use client'
 
 import { Container, Row, Col, Card, Button, Carousel } from 'react-bootstrap'
+import ResponsiveCardGrid from '../components/ResponsiveCardGrid';
 import Hero from '../components/Hero'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -239,9 +240,9 @@ export default function Home() {
           <p className="text-center text-muted mb-5 px-3">
           Meet our dedicated team of experienced educators and administrators committed to academic excellence and student success.
           </p>
-          <Row>
-            {leadership.map((leader, index) => (
-              <Col lg={3} md={6} className="mb-4" key={index}>
+            <ResponsiveCardGrid 
+              items={leadership}
+              renderCard={(leader) => (
                 <Card className="text-center border-0 shadow h-100">
                   <Card.Body className="p-4">
                     <div 
@@ -263,9 +264,8 @@ export default function Home() {
                     <p className="text-muted small">{leader.description}</p>
                   </Card.Body>
                 </Card>
-              </Col>
-            ))}
-          </Row>
+              )}
+            />
         </Container>
       </section>
     </>
