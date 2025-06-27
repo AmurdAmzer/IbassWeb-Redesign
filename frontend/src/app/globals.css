@@ -248,12 +248,22 @@ footer a:hover {
   .mobile-scroll-wrapper {
     display: flex;
     gap: 15px;
-    padding: 20px 60px; /* Increased padding to show more of side cards */
     align-items: center;
+    padding: 20px 15px; /* Normal padding */
+  }
+
+  /* Add spacers before first and after last card */
+  .mobile-scroll-wrapper::before,
+  .mobile-scroll-wrapper::after {
+    content: '';
+    display: block;
+    flex-shrink: 0;
+    width: calc((100vw - 280px) / 2 - 15px); /* Half viewport minus half card minus gap */
+    height: 1px;
   }
 
   .mobile-scroll-card {
-    flex: 0 0 calc(100vw - 120px); /* Smaller to show more side cards */
+    flex: 0 0 280px;
     scroll-snap-align: center;
     transition: all 0.3s ease;
     transform: scale(0.85) translateZ(0);
@@ -322,30 +332,31 @@ footer a:hover {
 
   .carousel-dot.active {
     background: var(--school-blue);
-    width: 13px;
+    width: 24px;
     border-radius: 4px;
   }
 }
 
-/* For smaller screens */
+/* For smaller screens, adjust the spacer width */
 @media (max-width: 480px) {
-  .mobile-scroll-wrapper {
-    padding: 20px 40px; /* Less padding on smaller screens */
-    gap: 10px;
+  .mobile-scroll-wrapper::before,
+  .mobile-scroll-wrapper::after {
+    width: calc((100vw - 240px) / 2 - 15px); /* Adjusted for smaller card width */
   }
   
   .mobile-scroll-card {
-    flex: 0 0 calc(100vw - 120px);
+    flex: 0 0 240px;
   }
 }
 
 /* For very small screens */
 @media (max-width: 360px) {
-  .mobile-scroll-wrapper {
-    padding: 20px 30px;
+  .mobile-scroll-wrapper::before,
+  .mobile-scroll-wrapper::after {
+    width: calc((100vw - 200px) / 2 - 15px);
   }
   
   .mobile-scroll-card {
-    flex: 0 0 calc(100vw - 60px);
+    flex: 0 0 200px;
   }
 }
