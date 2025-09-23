@@ -289,7 +289,7 @@ We welcome contributions to improve the website! Please follow these steps:
 - [ ] Mobile app development
 - [ ] Live chat support
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
