@@ -36,8 +36,8 @@ export default function Home() {
     {
       id: 1,
       title: 'Certificates for 2024 Candidates Available',
-      description: 'The Bosomtwe Girls STEM High School administration wishes to inform all 2024 graduates that their official certificates are ready for collection at the school premises. Come with a valid ID from Monday to Friday 9:00am - 3:00pm.',
-      image: '/images/BosomtweGirls.jpg'
+      description: 'Ibadur Rahman Academy administration wishes to inform all 2024 graduates that their official certificates are ready for collection at the school premises. Come with a valid ID from Monday to Friday 9:00am - 3:00pm.',
+      image: '/images/WASSCEResults2024.jpg'
     },
     {
       id: 2,
