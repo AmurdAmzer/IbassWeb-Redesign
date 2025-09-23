@@ -25,13 +25,22 @@ function GalleryContent() {
       id: 1,
       type: 'image',
       category: 'news',
+      title: 'Certificates for 2024 Candidates Available',
+      description: 'The Bosomtwe Girls STEM High School administration wishes to inform all 2024 graduates that their official certificates are ready for collection at the school premises. Come with a valid ID from Monday to Friday 9:00am - 3:00pm.',
+      thumbnail: '/images/BosomtweGirls.jpg',
+      fullSize: '/images/BosomtweGirlsfullSize.jpg'
+    },
+    {
+      id: 2,
+      type: 'image',
+      category: 'news',
       title: 'SRC Week Celebration',
       description: 'Welcome to Ibadur Rahman School, where we nurture curiosity and foster a love for learning. Join us in our mission to create a supportive environment that inspires students to achieve their full potential.',
       thumbnail: '/images/news1.jpg',
       fullSize: '/images/news1.jpg'
     },
     {
-      id: 2,
+      id: 3,
       type: 'image',
       category: 'news',
       title: 'Inter-House Football Match',
@@ -40,7 +49,7 @@ function GalleryContent() {
       fullSize: '/images/news3.jpg'
     },
     {
-      id: 3,
+      id: 4,
       type: 'image',
       category: 'news',
       title: 'Academic Excellence Awards 2025',
@@ -50,7 +59,7 @@ function GalleryContent() {
     },
 
     {
-        id: 4,
+        id: 5,
         type: 'image',
         category: 'campus',
         title: 'SRC Week Celebration',
@@ -60,7 +69,7 @@ function GalleryContent() {
       },
 
     {
-      id: 5,
+      id: 6,
       type: 'image',
       category: 'photo',
       title: 'Science Laboratory Session',
@@ -70,7 +79,7 @@ function GalleryContent() {
     },
     
     {
-      id: 6,
+      id: 7,
       type: 'video',
       category: 'video',
       title: 'Graduation Ceremony 2024',
