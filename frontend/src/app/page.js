@@ -35,18 +35,24 @@ export default function Home() {
   const newsArticles = [
     {
       id: 1,
+      title: 'Certificates for 2024 Candidates Available',
+      description: 'The Bosomtwe Girls STEM High School administration wishes to inform all 2024 graduates that their official certificates are ready for collection at the school premises.',
+      image: '/images/news1.jpg'
+    },
+    {
+      id: 2,
       title: 'SRC Week Celebration',
       description: 'Welcome to Ibadur Rahman School, where we nurture curiosity and foster a love for learning. Join us in our mission to create a supportive environment that inspires students to achieve their full potential.',
       image: '/images/news1.jpg'
     },
     {
-      id: 2,
+      id: 3,
       title: 'Academic Excellence Awards 2025',
       description: 'Celebrating outstanding academic achievements of our students. Join us as we recognize the hard work and dedication of our brilliant minds.',
       image: '/images/news2.jpg'
     },
     {
-      id: 3,
+      id: 4,
       title: 'Sports Day Success',
       description: 'Our annual sports day was a tremendous success with students showcasing their athletic abilities and team spirit.',
       image: '/images/news3.jpg'
