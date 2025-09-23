@@ -26,7 +26,7 @@ function GalleryContent() {
       type: 'image',
       category: 'news',
       title: 'Certificates for 2024 Candidates Available',
-      description: 'TheIbadur Rahman Academy administration wishes to inform all 2024 graduates that their official certificates are ready for collection at the school premises. Come with a valid ID from Monday to Friday 9:00am - 3:00pm.',
+      description: 'The Ibadur Rahman Academy administration wishes to inform all 2024 graduates that their official certificates are ready for collection at the school premises. Come with a valid ID from Monday to Friday 9:00am - 3:00pm.',
       thumbnail: '/images/WASSCEResults2024.jpg',
       fullSize: '/images/WASSCEResults2024.jpg'
     },
