@@ -1,4 +1,4 @@
-# 🎓 Ibadur Rahman Academy Website
+# Ibadur Rahman Academy Website
 
 A modern, responsive website for Ibadur Rahman Academy built with Next.js 14 and React-Bootstrap.
 
@@ -46,7 +46,7 @@ Ibadur Rahman Academy's official website serves as a comprehensive digital platf
 -  **Smooth Animations** - Fade-in effects and transitions
 -  **Bootstrap Components** - Consistent and reliable UI elements
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **Framework:** [Next.js 14](https://nextjs.org/) (App Router)
@@ -60,7 +60,7 @@ Ibadur Rahman Academy's official website serves as a comprehensive digital platf
 - **Authentication:** NextAuth.js
 - **Hosting:** [Vercel](https://vercel.com/)
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js 18.17 or later
@@ -103,7 +103,7 @@ Ibadur Rahman Academy's official website serves as a comprehensive digital platf
 6. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 IbassWeb-Redesign/
@@ -143,7 +143,7 @@ IbassWeb-Redesign/
 └── README.md                  # This file
 ```
 
-## 📜 Available Scripts
+## Available Scripts
 
 In the frontend directory, you can run:
 
@@ -162,7 +162,7 @@ You need to run `npm run build` first.
 ### `npm run lint`
 Runs the linter to check for code quality issues.
 
-## 📄 Pages
+## Pages
 
 ### Homepage (`/`)
 - Hero carousel with school highlights
@@ -204,7 +204,7 @@ Runs the linter to check for code quality issues.
 ### Search (`/searchBar`)
 - Search Bar
 
-## 🧩 Components
+## Components
 
 ### Header Component
 - Responsive navigation menu
@@ -224,7 +224,7 @@ Runs the linter to check for code quality issues.
 - Addresses and Map
 - Copyright section with dark background
 
-## 🌐 Deployment
+## Deployment
 
 ### Deploy to Vercel (Recommended)
 
@@ -249,7 +249,7 @@ Runs the linter to check for code quality issues.
    netlify deploy --prod
    ```
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions to improve the website! Please follow these steps:
 
@@ -266,7 +266,7 @@ We welcome contributions to improve the website! Please follow these steps:
 - Ensure all links are working
 - Optimize images before adding
 
-## 🚧 Future Enhancements
+## Future Enhancements
 
 ### Phase 2: Content Management
 - [ ] Integrate Sanity CMS
@@ -293,7 +293,7 @@ We welcome contributions to improve the website! Please follow these steps:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Contact
+## Contact
 
 **Ibadur Rahman Academy**
 - Website: [www.ibadurrahman.edu.gh](https://www.ibadurrahman.edu.gh)
@@ -305,5 +305,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - ICT Department, Ibadur Rahman Academy
 
 ---
-
-<p align="center">Made with ❤️ by Ibadur Rahman Academy ICT Team</p>
